@@ -100,7 +100,7 @@ h2 {
 }
 
 .social {
-  margin-right: 40px;
+  margin-right: 10px;
   font-size: 0;
   display: block;
 }
@@ -292,7 +292,7 @@ footer p,
 .buttons {
   margin-block-start: 0;
   margin-block-end: 0;
-  margin: 12px 10px 0 0;
+  margin: 12px 5px 0 0;
 }
 
 .mobile {
