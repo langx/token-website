@@ -9,7 +9,7 @@
     <title>langX - The 'Learn to Earn' Token Project by languageXchange</title>
     <!-- 1. load the webfont and style -->
     <link rel="stylesheet" type="text/css" href="css/font.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -150,7 +150,7 @@
       <h3>Coming Soon</h3>
     </section>
 
-    <section id="hero2">
+    <section id="hero">
       <h1>langX<br /></h1>
       <p>
         <u
@@ -184,14 +184,18 @@
             class="social"
             href="https://www.twitter.com/languageXapp"
             target="_blank"
-            ><img width="20" src="images/twitter.png"
-          /></a>
+          >
+            <!-- <img width="20" src="images/twitter.png" /> -->
+            <img width="24" src="images/socials/x.svg" />
+          </a>
           <a
             class="social"
             href="https://www.instagram.com/languageXapp"
             target="_blank"
-            ><img width="20" src="images/insta.png"
-          /></a>
+          >
+            <!-- <img width="20" src="images/insta.png" /> -->
+            <img width="24" src="images/socials/instagram.svg" />
+          </a>
         </div>
       </div>
     </footer>
@@ -231,12 +235,12 @@
 
       //text intro animation
       var tl = gsap.timeline(),
-        mySplitText = new SplitText("#hero h1, #hero2 h1", {
+        mySplitText = new SplitText("#hero h1", {
           type: "words,chars",
         }),
         chars = mySplitText.chars; //an array of all the divs that wrap each character
 
-      gsap.set("#hero h1,#hero p, #hero2 h1,#hero2 p", { perspective: 400 });
+      gsap.set("#hero h1,#hero p", { perspective: 400 });
 
       // tl.from(chars, {duration: 0.8, opacity:0, rotationX:20, y:400,  ease:"back", stagger: 0.05}, "+=0");
       tl.from(
@@ -264,7 +268,7 @@
         "-=0"
       );
       tl.from(
-        "#hero p, #hero2 p",
+        "#hero p",
         { duration: 2, ease: "expo", y: 30, opacity: 0 },
         "-=1"
       );
