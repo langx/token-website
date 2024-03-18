@@ -64,7 +64,7 @@ h2 {
   height: 15px;
   display: inline-block;
   margin-right: 5px;
-  background-image: url("images/arrow.png");
+  background-image: url("../images/arrow.png");
   background-position: center;
   background-size: contain;
 }
