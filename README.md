@@ -1,6 +1,6 @@
 # token-website
 
-Official Website for the [token.languageXchange.net](https://token.languageXchange.net)
+Official Website for the [token.langx.io](https://token.langx.io)
 
 ## Development Status
 
