@@ -47,8 +47,14 @@
       name="twitter:description"
       content="LangX Token - The 'Learn to Earn' Token Project by LangX"
     />
-    <meta property="og:title" content="LangX Token - The 'Learn to Earn' Token" />
-    <meta name="twitter:title" content="LangX Token - The 'Learn to Earn' Token" />
+    <meta
+      property="og:title"
+      content="LangX Token - The 'Learn to Earn' Token"
+    />
+    <meta
+      name="twitter:title"
+      content="LangX Token - The 'Learn to Earn' Token"
+    />
     <meta
       property="og:image"
       content="https://token.langx.io/images/site-preview.png"
@@ -84,11 +90,7 @@
         <a class="social" href="https://t.me/langxapp" target="_blank">
           <img width="24" src="images/socials/telegram.svg" />
         </a>
-        <a
-          class="social"
-          href="https://github.com/langxapp"
-          target="_blank"
-        >
+        <a class="social" href="https://github.com/langxapp" target="_blank">
           <img width="24" src="images/socials/github.svg" />
         </a>
       </div>
@@ -109,10 +111,7 @@
       <p>
         <u
           >The innovative 'Learn to Earn' Token Project by
-          <a
-            href="http://langx.io"
-            target="_blank"
-            rel="noopener noreferrer"
+          <a href="http://langx.io" target="_blank" rel="noopener noreferrer"
             >LangX</a
           >
           <br /><br
@@ -188,10 +187,7 @@
       <p>
         <u
           >The innovative 'Learn to Earn' Token Project by
-          <a
-            href="http://langx.io"
-            target="_blank"
-            rel="noopener noreferrer"
+          <a href="http://langx.io" target="_blank" rel="noopener noreferrer"
             >LangX</a
           >. <br /><br
         /></u>
@@ -232,11 +228,7 @@
           >
             <img width="24" src="images/socials/x.svg" />
           </a>
-          <a
-            class="social"
-            href="https://tiktok.com/@langxapp"
-            target="_blank"
-          >
+          <a class="social" href="https://tiktok.com/@langxapp" target="_blank">
             <img width="24" src="images/socials/tiktok.svg" />
           </a>
           <a
@@ -260,11 +252,7 @@
           >
             <img width="24" src="images/socials/bluesky.svg" />
           </a>
-          <a
-            class="social"
-            href="https://github.com/langxapp"
-            target="_blank"
-          >
+          <a class="social" href="https://github.com/langxapp" target="_blank">
             <img width="24" src="images/socials/github.svg" />
           </a>
         </div>
@@ -419,19 +407,18 @@
       });
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-KXRC5YCB27"
-    ></script>
+    <!-- Insight Tag (tracker.js) -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-KXRC5YCB27");
+      (function () {
+        window.counterscale = {
+          q: [["set", "siteId", "token-website"], ["trackPageview"]],
+        };
+      })();
     </script>
+    <script
+      id="counterscale-script"
+      src="https://insight.langx.io/tracker.js"
+      defer
+    ></script>
   </body>
 </html>
