@@ -407,18 +407,11 @@
       });
     </script>
 
-    <!-- Insight Tag (tracker.js) -->
-    <script>
-      (function () {
-        window.counterscale = {
-          q: [["set", "siteId", "token-website"], ["trackPageview"]],
-        };
-      })();
-    </script>
+    <!-- Insight Tag (script.js) -->
     <script
-      id="counterscale-script"
-      src="https://insight.langx.io/tracker.js"
       defer
+      data-domain="token.langx.io"
+      src="https://plausible.langx.io/js/script.js"
     ></script>
   </body>
 </html>
