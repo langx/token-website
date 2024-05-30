@@ -18,18 +18,18 @@
 
 <Footer />
 
-<div id="coins">
-	<img width="152" src="images/coin-1.png" role="presentation" alt="" />
-	<img width="148" src="images/coin-2.png" role="presentation" alt="" />
-	<img width="150" src="images/coin-3.png" role="presentation" alt="" />
-	<img width="152" src="images/coin-4.png" role="presentation" alt="" />
-	<img width="130" src="images/coin-5.png" role="presentation" alt="" />
-	<img width="76" src="images/coin-6.png" role="presentation" alt=""  />
-	<img width="154" src="images/coin-7.png" role="presentation" alt=""  />
-	<img width="130" src="images/coin-5.png" role="presentation" alt=""  />
-	<img width="76" src="images/coin-6.png" role="presentation" alt=""  />
-	<img width="154" src="images/coin-7.png" role="presentation" alt=""  />
-</div>
+<!--<div id="coins">-->
+<!--	<img width="152" src="images/coin-1.png" role="presentation" alt="" />-->
+<!--	<img width="148" src="images/coin-2.png" role="presentation" alt="" />-->
+<!--	<img width="150" src="images/coin-3.png" role="presentation" alt="" />-->
+<!--	<img width="152" src="images/coin-4.png" role="presentation" alt="" />-->
+<!--	<img width="130" src="images/coin-5.png" role="presentation" alt="" />-->
+<!--	<img width="76" src="images/coin-6.png" role="presentation" alt=""  />-->
+<!--	<img width="154" src="images/coin-7.png" role="presentation" alt=""  />-->
+<!--	<img width="130" src="images/coin-5.png" role="presentation" alt=""  />-->
+<!--	<img width="76" src="images/coin-6.png" role="presentation" alt=""  />-->
+<!--	<img width="154" src="images/coin-7.png" role="presentation" alt=""  />-->
+<!--</div>-->
 
 <style lang="postcss">
 	:global(body) {

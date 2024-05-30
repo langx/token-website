@@ -1,6 +1,6 @@
 <footer class="w-full inline-block bg-accent-light text-black border-b-4 border-t-4 border-black">
-    <div class="flex justify-between mx-auto my-[42px]" style="width: calc(100% - 56px);">
-        <div class="flex justify-center text-lg">
+    <div class="flex flex-col min-[1470px]:flex-row justify-between mx-auto my-[42px]" style="width: calc(100% - 56px);">
+        <div class="flex flex-col min-[1470px]:flex-row items-center justify-center text-lg">
             <p class="block font-bold mt-3 mr-[5px]">
                 <b> © 2024 LangX | Practice, Learn, Succeed!</b>
             </p>
