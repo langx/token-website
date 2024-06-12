@@ -269,6 +269,150 @@ footer {
   transform: scale(0.7);
 }
 
+/* LangX Token Introduction */
+
+.langx-token-introduction-section {
+  background-color: #ffc409;
+  padding: 64px 24px;
+}
+
+.langx-token-introduction-section > main {
+  max-width: 900px;
+}
+
+
+.langx-token-introduction-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.langx-token-introduction-section > main {
+  display: flow-root;
+  margin: auto;
+}
+
+.langx-token-introduction-section > main > section + section {
+  margin-top: 72px;
+}
+
+.langx-token-introduction-section > main > section + section::before  {
+  content: '';
+  display: block;
+  position: relative;
+  background-color: #ff571a;
+  height: 4px;
+  width: 95%;
+  margin: auto;
+  top: -40px;
+}
+
+.langx-token-introduction-section h1 {
+  font-size: 5.5rem;
+  text-shadow: 0px 8px 0px #130900;
+}
+
+.bigger-fs {
+  font-size: 6.5rem;
+  text-shadow: 0px 10px 0px #130900;
+}
+
+.langx-token-introduction-section a[href]{
+  color: #d41c16;
+  text-decoration: #d41c16 2px solid underline;
+  font-weight: 600;
+  text-underline-offset: 3px;
+}
+
+.langx-token-introduction-section a[href]:hover{
+  cursor: alias;
+}
+
+.langx-token-introduction-section h2 {
+  font-size: 5.3rem;
+  text-shadow:  0px 6px 0px #130900;
+}
+
+.langx-token-introduction-section :is(h2, h3) {
+  margin: 0px;
+}
+
+.list-token-distribution-criteria {
+  font-size: 1.1em;
+  border: #d44916 5px;
+  border-style: dashed;
+  border-radius: 12px;
+  max-width: fit-content;
+  margin: 24px auto 0px;
+  padding: 16px 40px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.list-token-distribution-criteria :is(ul) {
+  margin:0 0 0 16px;
+  padding: 0;
+  text-indent: 0;
+}
+
+.list-token-distribution-criteria ::marker{
+  color: #d44916;
+  font-size: 1.6em;
+}
+
+.list-token-distribution-criteria li + li {
+  margin-top: 0.5em;
+}
+
+.accordion{
+  margin: 16px auto 0;
+}
+
+.accordion-panel {
+  display: grid;
+  padding: 16px 24px;
+  grid-template-rows: auto 0fr;
+  transition: grid-template-rows 500ms ease-out;
+  -webkit-transition: grid-template-rows 500ms ease-out;
+  -moz-transition: grid-template-rows 500ms ease-out;
+  -ms-transition: grid-template-rows 500ms ease-out;
+  -o-transition: grid-template-rows 500ms ease-out;
+  cursor: pointer;
+}
+
+.accordion-panel + .accordion-panel {
+  border-top: #000 1px solid;
+}
+
+.accordion-panel-title{
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.accordion-panel-title > a {
+  transition: transform 500ms;
+  font-size: 2em;
+}
+
+.is-open {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  overflow: hidden;
+}
+
+p:first-child {
+  margin-top: 16px;
+}
+
+.accordion-panel[aria-expanded="true"] {
+  grid-template-rows: auto 1fr;
+}
+
 /*Footer*/
 footer {
   width: 100%;
@@ -372,6 +516,15 @@ footer p,
   .buttons {
     margin: 12px;
   }
+
+  /* LangX Token Introduction */
+  .langx-token-introduction-section p, .accordion-panel-title {
+    font-size: 1.1rem;
+  }
+
+  .list-token-distribution-criteria {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 539px) {
@@ -437,5 +590,21 @@ footer p,
 
   .footer-content {
     padding-bottom: 80px;
+  }
+
+  /* LangX Token Introduction */
+  .langx-token-introduction-section h1 {
+    font-size: 3.2rem;
+    text-shadow: 0px 4px 0px #130900;
+  }
+
+  .bigger-fs {
+    font-size: 5rem;
+    text-shadow: 0px 6px 0px #130900;
+  }
+
+  .langx-token-introduction-section h2 {
+    font-size: 3.4rem;
+    text-shadow:  0px 4px 0px #130900;
   }
 }
