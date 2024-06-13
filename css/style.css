@@ -28,7 +28,7 @@ a {
 
 h1,
 h2 {
-  margin-block-start: 0;
+  /*margin-block-start: 0;*/
   /* margin-block-end: 0; */
   text-align: center;
 
@@ -119,13 +119,13 @@ h2 {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   border-bottom: 4px solid black;
 }
 
 #hero h1 {
-  line-height: 60%;
-  padding: 9vh 0 5vh 0;
+  margin-top: 0px;
+  margin-bottom: 48px;
 }
 
 #hero p {
@@ -162,27 +162,40 @@ footer {
 }
 
 #languageXchangeSection {
-  padding-top: 1vh;
-  padding-bottom: 10vh;
+  padding: 64px 36px;
 }
-
+  
 #languageXchangeSection h1 {
-  font-size: 15vw;
-  text-shadow: 0px 14px 0px #130900;
+  font-size: 7vw;
+  text-shadow: 0px 8px 0px #130900;
+  line-height: 0;
+  margin: 36px 0;
+  -webkit-text-stroke: 3px #130900;
+  -webkit-text-fill-color: #fffdf1;
 }
 
 #languageXchangeSection h2 {
   font-size: 8vw;
   text-shadow: 0px 10px 0px #130900;
-  line-height: 0;
-  margin-top: 30vw;
-  margin-bottom: 2vw;
-  -webkit-text-stroke: 3px #130900;
-  -webkit-text-fill-color: #fffdf1;
+  margin: 56px 0 80px;
 }
 
 #languageXchangeSection h3 {
   display: none;
+}
+
+.app-link-buttons {
+  margin: auto;
+  justify-content: center;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 36px;
+  row-gap: 12px;
+}
+
+.app-link-buttons img {
+  max-width: 200px;
 }
 
 /* down arrow button */
@@ -273,7 +286,13 @@ footer {
 
 .langx-token-introduction-section {
   background-color: #ffc409;
-  padding: 64px 24px;
+  padding: 1px 24px 64px;
+}
+
+.langx-token-introduction-section h1 {
+  font-size: 5.5rem;
+  text-shadow: 0px 8px 0px #130900;
+  margin: 32px 0px 24px;
 }
 
 .langx-token-introduction-section > main {
@@ -305,14 +324,8 @@ footer {
   margin: auto;
   top: -40px;
 }
-
-.langx-token-introduction-section h1 {
-  font-size: 5.5rem;
-  text-shadow: 0px 8px 0px #130900;
-}
-
 .bigger-fs {
-  font-size: 6.5rem;
+  font-size: 6.6rem;
   text-shadow: 0px 10px 0px #130900;
 }
 
@@ -328,8 +341,8 @@ footer {
 }
 
 .langx-token-introduction-section h2 {
-  font-size: 5.3rem;
-  text-shadow:  0px 6px 0px #130900;
+  font-size: 4.8rem;
+  text-shadow:  0px 4px 0px #130900;
 }
 
 .langx-token-introduction-section :is(h2, h3) {
@@ -358,11 +371,11 @@ footer {
 
 .list-token-distribution-criteria ::marker{
   color: #d44916;
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 .list-token-distribution-criteria li + li {
-  margin-top: 0.5em;
+  margin-top: 0.5rem;
 }
 
 .accordion{
@@ -394,7 +407,7 @@ footer {
 
 .accordion-panel-title > a {
   transition: transform 500ms;
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .is-open {
@@ -482,10 +495,6 @@ footer p,
     transform: scale(0.3);
   }
 
-  #languageXchangeSection h2 {
-    margin-top: 5vw;
-  }
-
   #hero {
     height: 70vh;
     border-bottom: 2px solid black;
@@ -502,10 +511,24 @@ footer p,
   }
 
   #languageXchangeSection {
-    padding-top: 30vw;
+    /* padding-top: 30vw; */
     padding-bottom: 10vw;
-    width: 100vw;
     overflow: hidden;
+  }
+
+  #languageXchangeSection h1 {
+    font-size: 12vw;
+    text-shadow: 0px 8px 0px #130900;
+  }
+
+  #languageXchangeSection h2 {
+    font-size: 10vw;
+    text-shadow: 0px 8px 0px #130900;
+    margin-top: 64px;
+  }
+
+  .app-link-buttons {
+    column-gap: 24px;
   }
 
   .social {
@@ -518,6 +541,21 @@ footer p,
   }
 
   /* LangX Token Introduction */
+  .langx-token-introduction-section h1 {
+    font-size: 4.5rem;
+    text-shadow: 0px 4px 0px #130900;
+    margin-bottom: 48px;
+  }
+
+  .bigger-fs {
+    font-size: 5rem;
+    text-shadow: 0px 6px 0px #130900;
+  }
+
+  .langx-token-introduction-section h2 {
+    font-size: 3rem;
+  }
+
   .langx-token-introduction-section p, .accordion-panel-title {
     font-size: 1.1rem;
   }
@@ -544,7 +582,7 @@ footer p,
     padding: 12vh 0 5vh 0;
   }
 
-  #languageXchangeSection {
+  /* #languageXchangeSection {
     padding-top: 60vw;
     padding-bottom: 10vw;
   }
@@ -552,6 +590,21 @@ footer p,
   #languageXchangeSection h1,
   #languageXchangeSection h2 {
     display: none;
+  } */
+
+  #languageXchangeSection {
+    padding-top: 10vw;
+  }
+
+  #languageXchangeSection h1 {
+    font-size: 14vw;
+    text-shadow: 0px 4px 0px #130900;
+  }
+
+  #languageXchangeSection h2 {
+    font-size: 18vw;
+    text-shadow: 0px 6px 0px #130900;
+    margin: 32px 0;
   }
 
   #languageXchangeSection h3 {
