@@ -8,7 +8,6 @@ This webpage is built with HTML, CSS and JavaScript.
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Issues](#issues)
 - [Stargazers](#stargazers)
@@ -16,13 +15,6 @@ This webpage is built with HTML, CSS and JavaScript.
 - [License](#license)
 
 ## Setup
-
-### Prerequisites
-
-Before you begin, please make sure you have met the following requirements.
-
-- You have installed [Node.js](https://nodejs.org/en) and [npm](https://www.npmjs.com/) (Node Package Manager).
-- You have a [GitHub](https://github.com/) account
 
 ### Getting Started
 
