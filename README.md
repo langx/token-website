@@ -46,27 +46,9 @@ git clone https://github.com/your-username/token-website.git
 cd token-website
 ```
 
-4. Install dependencies
-
-```bash
-npm install
-```
-
-## Start Development Server
-
-Once you've created your project and installed dependencies with `npm install`, you can start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-
-npm run dev -- --open
-```
-
 ## Issues
 
-If you encounter any issues, ensure that your [Node.js](https://nodejs.org/en) and [npm](https://www.npmjs.com/) versions are up to date.
+If you encounter any issues, feel free to open an issue at [langx/token-website/issues](https://github.com/langx/token-website/issues)
 
 ## Contributing
 
