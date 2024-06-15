@@ -10,7 +10,6 @@ This webpage is built with HTML, CSS and JavaScript.
 
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
-- [Development Server](#start-development-server)
 - [Issues](#issues)
 - [Stargazers](#stargazers)
 - [Contributors](#contributors)
