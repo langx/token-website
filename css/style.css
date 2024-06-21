@@ -721,7 +721,7 @@ footer p,
   }
 
   #hero {
-    padding-bottom: 48px;
+    padding: 48px 16px 48px;
   }
 
   #hero p {
@@ -730,7 +730,7 @@ footer p,
   }
 
   #hero h1 {
-    padding: 8vh 0 0vh 0;
+    padding: 0;
     margin-top: 0;
     margin-bottom: 40px;
   }
@@ -836,11 +836,11 @@ footer p,
     -webkit-text-fill-color: #fffdf1;
     text-shadow: 0px 2px 0px #130900;
   }
-  
+
   .token-leaderboard-table .tr :is(.td:first-child, .td:last-child) {
     font-size: 1.3rem;
   }
-  
+
   .token-leaderboard-table .tr > .td:nth-child(2) {
     font-size: 0.8rem;
   }
@@ -853,7 +853,7 @@ footer p,
     font-size: 1rem;
     font-weight: 500;
   }
-  
+
 
   /* LangX Token Introduction */
   .langx-token-introduction-section > main {
