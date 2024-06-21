@@ -81,7 +81,7 @@ function leaderboardToken(leaderboard) {
 function createColumn(textContent) {
     const column = document.createElement("div");
     column.classList.add("td");
-    const p = document.createElement("p")
+    const p = document.createElement("code")
     p.textContent = textContent;
     column.appendChild(p);
 
