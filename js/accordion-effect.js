@@ -1,11 +1,10 @@
 const accordion = document.querySelector(".accordion");
 
 accordion.addEventListener("click", (e) => {
-
-    console.log(e.target.tagName);
     if (e.target.href) return;
 
     const activePanel = e.target.closest(".accordion-panel");
+    
     if (!activePanel) return;
     toggleAccordion(activePanel);
 });
