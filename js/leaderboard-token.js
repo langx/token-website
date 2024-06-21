@@ -49,6 +49,9 @@ function toggledDropDown(toggleShow, dropDownCol) {
 }
 
 function leaderboardToken(leaderboard) {
+    alwaysShow.innerHTML = "";
+    canHide.innerHTML = "";
+
     for (let [i, user] of leaderboard.entries()) {
         if (i === 10) return;
 
