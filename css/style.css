@@ -177,7 +177,7 @@ section[aria-labelledby="app-link-buttons"] h2 {
 .app-link-buttons, .app-link-buttonsB {
   margin: auto;
   justify-content: center;
-  max-width: 800px;
+  max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
