@@ -97,6 +97,10 @@ h2 {
   background: #130900;
   border-radius: 11px;
   margin-right: 16px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
 }
 
 .social {
@@ -151,6 +155,10 @@ h2 {
   position: absolute;
   bottom: -5px;
   left: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 /* Start Earning Test Tokens Now! */
@@ -166,18 +174,18 @@ section[aria-labelledby="app-link-buttons"] h2 {
   -webkit-text-stroke: 2px #130900;
 }
 
-.app-link-buttons {
+.app-link-buttons, .app-link-buttonsB {
   margin: auto;
   justify-content: center;
   max-width: 800px;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 36px;
+  column-gap: 24px;
   row-gap: 12px;
 }
 
 .app-link-buttons img {
-  max-width: 200px;
+  max-width: 300px;
 }
 
 /*Animation*/
@@ -654,9 +662,13 @@ footer p,
   }
 
   .app-link-buttons {
-    max-width: 500px;
+    max-width: 600px;
     column-gap: 24px;
     row-gap: 16px;
+  }
+
+  .app-link-buttons img {
+    max-width: 270px;
   }
 
   #languageXchangeSection {
@@ -733,6 +745,10 @@ footer p,
     padding: 0;
     margin-top: 0;
     margin-bottom: 40px;
+  }
+
+  .app-link-buttons img {
+    max-width: 200px;
   }
 
   section[aria-labelledby="app-link-buttons"] h2 {
