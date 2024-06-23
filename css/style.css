@@ -131,6 +131,8 @@ h2 {
   min-height: 100vh;
   border-bottom: 4px solid black;
   padding-bottom: 64px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 #hero h1 {
