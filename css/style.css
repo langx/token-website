@@ -136,10 +136,12 @@ h2 {
 #hero h1 {
   margin-top: 0px;
   margin-bottom: 48px;
+  z-index: 1;
 }
 
 #hero p {
   margin: 50px 0 0 4px;
+  z-index: 1;
 }
 
 #hero p u {
@@ -170,6 +172,7 @@ h2 {
 
 section[aria-labelledby="app-link-buttons"] {
   max-width: 1300px;
+  z-index: 1;
 }
 
 section[aria-labelledby="app-link-buttons"] h2 {
@@ -213,6 +216,7 @@ footer {
   text-shadow: 0px 8px 0px #130900;
   -webkit-text-stroke: 2px #130900;
   margin: 0 0 32px;
+  z-index: 1;
 }
 
 .table-container {
