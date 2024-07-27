@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Site Maintenance</title>
+    <meta http-equiv="refresh" content="5;url=https://langx.io" />
+    <style>
+      body {
+        text-align: center;
+        padding: 150px;
+        font: 20px Helvetica, sans-serif;
+        color: #333;
+      }
+      article {
+        display: block;
+        text-align: left;
+        width: 650px;
+        margin: 0 auto;
+      }
+      a {
+        color: #dc8100;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #333;
+        text-decoration: none;
+      }
+      #dropdown {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1>We&rsquo;ll be back soon!</h1>
+      <div>
+        <p>
+          Sorry for the inconvenience but we&rsquo;re performing some
+          maintenance at the moment. If you need to you can always
+          <a href="mailto:hi@langx.io">contact us</a>, otherwise we&rsquo;ll be
+          back online shortly!
+        </p>
+        <p>&mdash;LangX The Team</p>
+      </div>
+    </article>
+    <div id="dropdown">
+      You will be redirected to <a href="https://langx.io">langx.io</a> shortly.
+    </div>
+
+    <script>
+      window.onload = function () {
+        var dropdown = document.getElementById("dropdown");
+        dropdown.style.display = "block";
+        setTimeout(function () {
+          dropdown.style.display = "none";
+        }, 4500); // Hide dropdown just before redirect
+      };
+    </script>
+  </body>
+</html>
