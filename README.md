@@ -14,6 +14,14 @@ in the repository is what ships.
 > else. It deliberately avoids market imagery — no tickers, no prices, no charts
 > that could be read as a traded asset.
 
+> **Social preview.** `images/site-preview.png` (1200×630) is rendered from
+> [`tools/og-source.html`](tools/og-source.html). To regenerate it after a copy
+> change:
+>
+> ```bash
+> "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --virtual-time-budget=8000 --window-size=1200,630 --screenshot=og@2x.png tools/og-source.html && magick og@2x.png -resize 1200x630 -strip images/site-preview.png
+> ```
+
 > **Keeping the numbers honest.** The earning rates, caps, daily pool and item
 > prices on this page are published values from the app's own configuration —
 > `packages/shared/src/token.ts` (`TOKEN_RULES`) and `cosmetics.ts` in the

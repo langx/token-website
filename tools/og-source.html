@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 630px; }
+  body {
+    background-color: #130900;
+    background-image: repeating-linear-gradient(0deg, rgba(255,253,241,.04) 0 1px, transparent 1px 4px);
+    color: #fffdf1;
+    font-family: "Space Mono", monospace;
+    display: flex; flex-direction: column;
+    padding: 52px 64px;
+  }
+  .disp { font-family: Bungee, sans-serif; font-weight: 400; letter-spacing: 1px; }
+  .top { display: flex; justify-content: space-between; align-items: center;
+         border-bottom: 2px solid rgba(255,196,9,.35); padding-bottom: 20px; }
+  .mid { flex: 1; display: flex; gap: 48px; align-items: center; padding: 34px 0; }
+  h1 { font-size: 76px; line-height: .96; color: #ffc409;
+       text-shadow: 0 6px 0 #ff571a, 0 12px 0 rgba(255,87,26,.22); }
+  .sub { margin-top: 22px; font-size: 19px; line-height: 1.5; color: rgba(255,253,241,.78); max-width: 560px; }
+  .board { width: 320px; flex: none; border: 2px solid #ffc409; }
+  .board-bar { background: #ffc409; color: #130900; padding: 11px 16px; font-size: 14px; }
+  .li { display: flex; justify-content: space-between; align-items: baseline;
+        padding: 13px 16px; border-bottom: 1px dashed rgba(255,253,241,.22); font-size: 14px; }
+  .li:last-child { border-bottom: 0; }
+  .li b { font-family: Bungee, sans-serif; font-weight: 400; color: #ffc409; font-size: 19px; }
+  .strip { border-top: 2px solid rgba(255,196,9,.35); padding-top: 20px;
+           font-size: 14px; letter-spacing: 3px; color: #ff571a; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <div class="disp" style="font-size: 26px; color: #ffc409;">LANGX TOKEN</div>
+    <div style="font-size: 14px; letter-spacing: 2px; color: rgba(255,253,241,.55);">TOKEN.LANGX.IO</div>
+  </div>
+
+  <div class="mid">
+    <div>
+      <h1 class="disp">PRACTISE<br>TO SCORE</h1>
+      <p class="sub">The in-app point you earn by practising and teaching in the LangX app &mdash; not a cryptocurrency.</p>
+    </div>
+    <div class="board">
+      <div class="board-bar disp">POINT VALUES</div>
+      <div class="li"><span>SEND A MESSAGE</span><b>+2</b></div>
+      <div class="li"><span>CORRECT A SENTENCE</span><b>+10</b></div>
+      <div class="li"><span>BOTH SIDES SPEAK</span><b>+15</b></div>
+    </div>
+  </div>
+
+  <div class="strip">IN-APP POINTS &nbsp;·&nbsp; NO WALLET &nbsp;·&nbsp; NO TRADING &nbsp;·&nbsp; NO CASH VALUE</div>
+</body>
+</html>
