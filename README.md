@@ -2,9 +2,17 @@
 
 [![Better Stack Badge](https://uptime.betterstack.com/status-badges/v1/monitor/wm9t.svg)](https://status.langx.io)
 
-Welcome to the LangX Token webpage! Our app, in addition to helping you learn a new language through practice and immersion with native speakers from around the world, will give you the opportunity to earn with our unique "Learn-to-Earn" initiative. This is where you can find out everything you need to know about this initiative. 
+Welcome to the LangX Token webpage! Alongside helping you learn a new language through practice and immersion with native speakers around the world, LangX rewards you with tokens for doing it — an in-app point you earn by practising and teaching, and spend on streak freezes and cosmetics. This page explains how that works.
+
+**LangX Token is not a cryptocurrency.** It cannot be bought, sold, traded, staked or withdrawn, it is not on a blockchain, and it does not unlock LangX Pro.
 
 This webpage is built with HTML, CSS and JavaScript.
+
+> **Keeping the numbers honest.** The earning rates, caps, daily pool and item
+> prices on this page are published values from the app's own configuration —
+> `packages/shared/src/token.ts` (`TOKEN_RULES`) and `cosmetics.ts` in the
+> [langx2](https://github.com/langx-io/langx2) repository. If those change, this
+> page has to change with them.
 
 ## Table of Contents
 

@@ -170,7 +170,7 @@ h2 {
   -o-border-radius: 4px;
 }
 
-/* Start Earning Test Tokens Now! */
+/* Start earning tokens now */
 
 section[aria-labelledby="app-link-buttons"] {
   max-width: 1300px;
@@ -268,7 +268,6 @@ footer {
   height: 95%;
 }
 
-
 .token-leaderboard-table {
   display: grid;
   grid-template-rows: auto 0fr;
@@ -365,47 +364,6 @@ footer {
   -o-transform: rotate(135deg);
 }
 
-/* Market data badge */
-
-#marketData {
-  max-width: 275px;
-  position: fixed;
-  left: 56px;
-  bottom: 56px;
-  z-index: 10;
-  line-height: 120%;
-  display: none;
-  justify-content: center;
-}
-
-#marketDataValues {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-#marketDataValues div {
-  display: flex;
-  justify-content: space-between;
-}
-
-#marketDataValues p {
-  margin: 3px 12px;
-}
-
-#marketDataValuesRow1 {
-  font-weight: 600;
-}
-
-#assetPercentLabel {
-  opacity: 0.3;
-}
-
-#assetChangeContainer {
-  display: flex;
-  align-items: center;
-}
-
 /*Coins*/
 
 #coins {
@@ -445,7 +403,6 @@ footer {
 .langx-token-introduction-section > main {
   max-width: 900px;
 }
-
 
 .langx-token-introduction-section p {
   font-size: 1.2rem;
@@ -613,7 +570,7 @@ footer p,
 
 /* md (for small laptops - screens equal to or greater than 992px wide) */
 @media screen and (max-width: 1199px) {
-  /* Start Earning Test Tokens Now! */
+  /* Start earning tokens now */
   /* .app-link-buttons img {
     max-width: 270px;
   } */
@@ -818,21 +775,6 @@ footer p,
     display: none;
   }
 
-  #marketData {
-    max-width: calc(100vw - 32px);
-    width: calc(100vw - 32px);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    margin: 16px;
-    box-sizing: border-box;
-  }
-
-  #marketDataValues div {
-    justify-content: space-between;
-    padding: 0;
-  }
-
   /* .footer-content {
     padding-bottom: 46px;
   } */
@@ -886,7 +828,6 @@ footer p,
     font-size: 1rem;
     font-weight: 500;
   }
-
 
   /* LangX Token Introduction */
   .langx-token-introduction-section > main {
