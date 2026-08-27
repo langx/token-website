@@ -6,7 +6,13 @@ Welcome to the LangX Token webpage! Alongside helping you learn a new language t
 
 **LangX Token is not a cryptocurrency.** It cannot be bought, sold, traded, staked or withdrawn, it is not on a blockchain, and it does not unlock LangX Pro.
 
-This webpage is built with HTML, CSS and JavaScript.
+This webpage is built with HTML, CSS and JavaScript — no build step, so what is
+in the repository is what ships.
+
+> **Design.** The page uses a scoreboard treatment: `#130900` ground, `#ffc409`
+> and `#ff571a` accents, Bungee for display type and Space Mono for everything
+> else. It deliberately avoids market imagery — no tickers, no prices, no charts
+> that could be read as a traded asset.
 
 > **Keeping the numbers honest.** The earning rates, caps, daily pool and item
 > prices on this page are published values from the app's own configuration —
