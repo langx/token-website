@@ -551,6 +551,37 @@ strong {
   color: var(--faint);
 }
 
+/* ------------------------------------------------------------ legal -- */
+
+/*
+ * privacy.html only. It reuses the section classes above wholesale; these four
+ * rules are the difference between a scoreboard and a page of prose — a page
+ * title where the hero would be, and a list that reads like the rest of the
+ * body copy instead of a browser default.
+ */
+
+.legal h1 {
+  margin: 0 0 18px;
+  font-size: 44px;
+  line-height: 1.05;
+  color: var(--yellow);
+  text-transform: uppercase;
+}
+
+.legal .block:first-child {
+  padding-top: 56px;
+}
+
+.legal .prose ul {
+  margin: 0 0 14px;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.legal .prose li {
+  margin-bottom: 8px;
+}
+
 /* --------------------------------------------------------------- footer -- */
 
 footer {
@@ -608,6 +639,10 @@ footer {
 
   #hero h1 {
     font-size: 52px;
+  }
+
+  .legal h1 {
+    font-size: 34px;
   }
 
   .split,
