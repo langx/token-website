@@ -1,5 +1,5 @@
 // URL de la API
-const apiUrl = 'https://api.langx.io/api/leaderboard/token';
+const apiUrl = 'https://api.langx.io/public/leaderboard/token';
 
 const table = document.querySelector(".token-leaderboard-table");
 const alwaysShow =  document.querySelector(".always-show");
@@ -19,7 +19,7 @@ async function getData() {
         }
         
         const data = await response.json();
-        leaderboardToken(data.documents);
+        leaderboardToken(data.entries);
     
     } catch (error) {
         console.error('Error fetching data:', error);
@@ -55,9 +55,12 @@ function leaderboardToken(leaderboard) {
     for (let [i, user] of leaderboard.entries()) {
         if (i === 10) return;
 
-        const id = user["$id"];
-        const balance = formatNumber(user["balance"]);
-        const userRank = ++i + ".";  
+        // v2 answers with real ranks (ties share one) and public handles,
+        // where v1 gave a truncated document id and a position in the array.
+        const id = "@" + user["handle"];
+        const balance = formatNumber(user["tokens"]);
+        const userRank = user["rank"] + ".";
+        i++;
     
         const rankColumn = createColumn(userRank);
         const userColumn = createColumn(id);
