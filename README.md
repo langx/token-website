@@ -9,6 +9,19 @@ Welcome to the LangX Token webpage! Alongside helping you learn a new language t
 This webpage is built with HTML, CSS and JavaScript — no build step, so what is
 in the repository is what ships.
 
+> **Analytics.** `js/analytics.js` sends page views and one event to PostHog on
+> its EU cloud, in cookieless mode: no cookie, no local storage, nothing written
+> to the visitor's browser, and therefore no cookie banner. It ships **off** —
+> `POSTHOG_KEY` at the top of that file is empty, and with no key nothing loads
+> and nothing is sent. Paste the **app's** PostHog project key there to turn it
+> on — the same project, because the free plan allows exactly one. The key is
+> public by design, can only write events, and already ships inside the mobile
+> app's bundle. Every event is stamped `langx_surface: 'token-website'` so the
+> app's dashboards can filter this traffic out. `js/posthog.js` is
+> `dist/array.no-external.js` from posthog-js 1.428.6, vendored the way
+> `gsap.min.js` is so no code is fetched from a third-party CDN. Changing any of
+> this means changing `privacy.html`, which describes it.
+
 > **Design.** The page uses a scoreboard treatment: `#130900` ground, `#ffc409`
 > and `#ff571a` accents, Bungee for display type and Space Mono for everything
 > else. It deliberately avoids market imagery — no tickers, no prices, no charts
