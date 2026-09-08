@@ -33,7 +33,7 @@
 
     <meta
       name="description"
-      content="What this page does and does not collect. token.langx.io stores nothing on your device and has no analytics; the LangX app's own privacy policy lives on langx.io."
+      content="What this page does and does not collect. token.langx.io stores nothing on your device — no cookie, no local storage — and its analytics are cookieless; the LangX app's own privacy policy lives on langx.io."
     />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#130900" />
@@ -83,10 +83,17 @@
             banner &mdash; there is nothing to ask you to agree to.
           </p>
           <p>
-            <strong>No analytics.</strong> No page-view counter, no tag manager,
-            no advertising pixel, no session recording. Not a self-hosted one
-            either: the analytics service LangX ran in version 1 was retired and
-            replaced with nothing.
+            <strong>Analytics that store nothing.</strong> This page counts page
+            views, and one event &mdash; a click on a link that leaves for the
+            app &mdash; with PostHog on its European cloud, in what PostHog
+            calls cookieless mode. It writes no cookie and no storage entry,
+            which is why the paragraph above still holds and why there is still
+            no cookie banner. A visitor is counted with a hash PostHog computes
+            on its own side from a salt it throws away daily, so a reader today
+            cannot be recognised as the same one tomorrow. There is no session
+            recording, no tag manager and no advertising pixel. Until September
+            2026 this section said there were no analytics at all; it changed in
+            the same release that switched them on.
           </p>
         </div>
       </section>
@@ -94,9 +101,9 @@
       <section class="block" aria-labelledby="what-your-browser-fetches">
         <h2 id="what-your-browser-fetches">What your browser fetches</h2>
         <p class="prose-lede">
-          Two requests leave your browser for somewhere other than this site.
-          Neither is tracking, but both are visible to somebody, so here they
-          are rather than hidden behind &ldquo;we collect nothing&rdquo;.
+          Three requests leave your browser for somewhere other than this
+          site. Each is visible to somebody, so here they are rather than
+          hidden behind &ldquo;we collect nothing&rdquo;.
         </p>
         <div class="cols">
           <div class="panel">
@@ -115,6 +122,17 @@
               again once a minute while the tab is open. Our own server sees the
               IP address that asked, uses it to answer and to rate-limit abuse,
               and does not attach it to anybody&rsquo;s account.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>PostHog</h3>
+            <p>
+              The analytics above. PostHog&rsquo;s script is served from this
+              site rather than from its CDN, and it is the build with nothing
+              left to fetch, so the single request your browser makes to PostHog
+              is the one carrying the page views themselves, to its European
+              endpoint. It sets no cookie and is told nothing about you beyond
+              which page you are on.
             </p>
           </div>
         </div>
@@ -262,5 +280,7 @@
         </div>
       </div>
     </footer>
+    <script defer src="js/posthog.js"></script>
+    <script defer src="js/analytics.js"></script>
   </body>
 </html>
