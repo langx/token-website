@@ -366,12 +366,13 @@ strong {
 }
 
 /*
- * The spend section grew a third sink and three panels do not fit the pair
- * grid above. `auto-fit` rather than a hard `repeat(3, …)`: at the narrow end
- * of the desktop range three of these are too cramped to read, and this drops
- * to two — and then to one at the breakpoint below, with the rest of `.cols`.
+ * The spend section outgrew the pair grid above. `auto-fit` rather than a hard
+ * column count: the number of sinks has changed twice already, and at the
+ * narrow end of the desktop range three of these are too cramped to read, so
+ * this drops to two — and then to one at the breakpoint below, with the rest
+ * of `.cols`.
  */
-.cols.cols-3 {
+.cols.cols-flow {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
