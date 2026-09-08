@@ -95,15 +95,25 @@
             2026 this section said there were no analytics at all; it changed in
             the same release that switched them on.
           </p>
+          <p>
+            <strong>And a second, thinner one that predates it.</strong> This
+            page is served through Cloudflare, and Cloudflare measures the
+            traffic it delivers: the page, the link that referred you, your
+            country, and which browser, operating system and device type asked.
+            It is switched on in Cloudflare&rsquo;s dashboard rather than by
+            anything in this repository, which is how it went unnamed here for
+            longer than it should have. It writes nothing to your browser
+            either, so the paragraph above still holds.
+          </p>
         </div>
       </section>
 
       <section class="block" aria-labelledby="what-your-browser-fetches">
         <h2 id="what-your-browser-fetches">What your browser fetches</h2>
         <p class="prose-lede">
-          Three requests leave your browser for somewhere other than this
-          site. Each is visible to somebody, so here they are rather than
-          hidden behind &ldquo;we collect nothing&rdquo;.
+          Four requests leave your browser for somewhere other than this site.
+          Each is visible to somebody, so here they are rather than hidden
+          behind &ldquo;we collect nothing&rdquo;.
         </p>
         <div class="cols">
           <div class="panel">
@@ -133,6 +143,16 @@
               is the one carrying the page views themselves, to its European
               endpoint. It sets no cookie and is told nothing about you beyond
               which page you are on.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>Cloudflare</h3>
+            <p>
+              The measurement described above. Cloudflare serves this page, so
+              it sees the request either way; the extra part is a small script
+              it injects from its own domain to record the page, referrer,
+              country, browser, operating system and device type. It sets no
+              cookie and writes nothing to your browser.
             </p>
           </div>
         </div>
