@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Every indexable page. tools/check-token-rules.mjs fails if a language page is missing. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://token.langx.io/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://token.langx.io/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://token.langx.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://token.langx.io/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://token.langx.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://token.langx.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://token.langx.io/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://token.langx.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://token.langx.io/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://token.langx.io/" />
+  </url>
+  <url>
+    <loc>https://token.langx.io/tr/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://token.langx.io/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://token.langx.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://token.langx.io/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://token.langx.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://token.langx.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://token.langx.io/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://token.langx.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://token.langx.io/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://token.langx.io/" />
+  </url>
+  <url>
+    <loc>https://token.langx.io/de/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://token.langx.io/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://token.langx.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://token.langx.io/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://token.langx.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://token.langx.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://token.langx.io/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://token.langx.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://token.langx.io/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://token.langx.io/" />
+  </url>
+  <url>
+    <loc>https://token.langx.io/es/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://token.langx.io/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://token.langx.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://token.langx.io/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://token.langx.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://token.langx.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://token.langx.io/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://token.langx.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://token.langx.io/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://token.langx.io/" />
+  </url>
+  <url>
+    <loc>https://token.langx.io/fr/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://token.langx.io/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://token.langx.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://token.langx.io/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://token.langx.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://token.langx.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://token.langx.io/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://token.langx.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://token.langx.io/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://token.langx.io/" />
+  </url>
+  <url>
+    <loc>https://token.langx.io/pt-br/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://token.langx.io/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://token.langx.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://token.langx.io/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://token.langx.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://token.langx.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://token.langx.io/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://token.langx.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://token.langx.io/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://token.langx.io/" />
+  </url>
+  <url>
+    <loc>https://token.langx.io/ru/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://token.langx.io/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://token.langx.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://token.langx.io/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://token.langx.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://token.langx.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://token.langx.io/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://token.langx.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://token.langx.io/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://token.langx.io/" />
+  </url>
+  <url>
+    <loc>https://token.langx.io/ar/</loc>
+    <lastmod>2026-09-23</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://token.langx.io/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://token.langx.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://token.langx.io/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://token.langx.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://token.langx.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://token.langx.io/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://token.langx.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://token.langx.io/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://token.langx.io/" />
+  </url>
+  <url>
+    <loc>https://token.langx.io/privacy</loc>
+    <lastmod>2026-09-23</lastmod>
+  </url>
+</urlset>

@@ -1,0 +1,21 @@
+# Cloudflare Pages response headers.
+#
+# Everything in the repository is deployed — there is no build step to leave
+# things out — so the files that are not pages for people get told to stay out
+# of search results instead.
+
+/maintenance
+  X-Robots-Tag: noindex
+/maintenance.html
+  X-Robots-Tag: noindex
+/tools/*
+  X-Robots-Tag: noindex
+/README.md
+  X-Robots-Tag: noindex
+/LICENSE
+  X-Robots-Tag: noindex
+/404
+  X-Robots-Tag: noindex
+
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex

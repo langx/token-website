@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LangX Token — Les points de l’app d’échange linguistique</title>
+    <meta
+      name="description"
+      content="LangX Token est le point que tu gagnes en pratiquant et en enseignant des langues sur LangX. Pas une cryptomonnaie&nbsp;: ni prix, ni marché, ni portefeuille."
+    />
+    <link rel="canonical" href="https://token.langx.io/fr/" />
+    <link rel="alternate" hreflang="en" href="https://token.langx.io/" />
+    <link rel="alternate" hreflang="tr" href="https://token.langx.io/tr/" />
+    <link rel="alternate" hreflang="de" href="https://token.langx.io/de/" />
+    <link rel="alternate" hreflang="es" href="https://token.langx.io/es/" />
+    <link rel="alternate" hreflang="fr" href="https://token.langx.io/fr/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://token.langx.io/pt-br/" />
+    <link rel="alternate" hreflang="ru" href="https://token.langx.io/ru/" />
+    <link rel="alternate" hreflang="ar" href="https://token.langx.io/ar/" />
+    <link rel="alternate" hreflang="x-default" href="https://token.langx.io/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LangX" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:url" content="https://token.langx.io/fr/" />
+    <meta
+      property="og:title"
+      content="LangX Token — Gagne des points en pratiquant et en enseignant"
+    />
+    <meta
+      property="og:description"
+      content="LangX Token est le point que tu gagnes en pratiquant et en enseignant des langues sur LangX. Pas une cryptomonnaie&nbsp;: ni prix, ni marché, ni portefeuille."
+    />
+    <meta property="og:image" content="https://token.langx.io/images/site-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="LangX Token — pratique pour marquer. Des points dans l’app, pas de portefeuille, pas de marché, aucune valeur monétaire."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@langx_io" />
+    <meta
+      name="twitter:title"
+      content="LangX Token — Gagne des points en pratiquant et en enseignant"
+    />
+    <meta
+      name="twitter:description"
+      content="LangX Token est le point que tu gagnes en pratiquant et en enseignant des langues sur LangX. Pas une cryptomonnaie&nbsp;: ni prix, ni marché, ni portefeuille."
+    />
+    <meta name="twitter:image" content="https://token.langx.io/images/site-preview.png" />
+    <meta name="theme-color" content="#130900" />
+
+    <!--
+      The hero heading animates in. It is hidden only while GSAP is on its way,
+      only for visitors who have not asked for reduced motion, and never for
+      longer than a second and a half — so a slow or missing script costs the
+      animation, not the headline. GSAP is deferred rather than render-blocking.
+    -->
+    <script>
+      (function (root) {
+        if (!window.matchMedia || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        root.classList.add("intro");
+        setTimeout(function () { root.classList.remove("intro"); }, 1500);
+      })(document.documentElement);
+    </script>
+    <script defer src="/js/gsap.min.js"></script>
+    <script defer src="/js/SplitText.min.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://langx.io/#organization",
+            "name": "LangX",
+            "url": "https://langx.io/",
+            "logo": "https://token.langx.io/images/apple-touch-icon.png",
+            "email": "hi@langx.io",
+            "sameAs": [
+              "https://github.com/langx",
+              "https://x.com/langx_io",
+              "https://www.facebook.com/langxapp",
+              "https://www.youtube.com/@langxapp",
+              "https://tiktok.com/@langxapp",
+              "https://bsky.app/profile/langx.io",
+              "https://t.me/languageXapp",
+              "https://discord.langx.io"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://token.langx.io/#website",
+            "url": "https://token.langx.io/",
+            "name": "LangX Token",
+            "publisher": { "@id": "https://langx.io/#organization" },
+            "inLanguage": ["en", "tr", "de", "es", "fr", "pt-BR", "ru", "ar"]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://token.langx.io/fr/#webpage",
+            "url": "https://token.langx.io/fr/",
+            "name": "LangX Token — Les points de l’app d’échange linguistique",
+            "isPartOf": { "@id": "https://token.langx.io/#website" },
+            "about": { "@id": "https://langx.io/#organization" },
+            "inLanguage": "fr",
+            "primaryImageOfPage": "https://token.langx.io/images/site-preview.png"
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://token.langx.io/fr/#faq",
+            "inLanguage": "fr",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "LangX Token est-il une cryptomonnaie ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Non. Il n’est pas sur une blockchain, il n’a ni contrat ni adresse de portefeuille, et il n’est coté sur aucune plateforme d’échange. C’est un nombre dans ton compte LangX, gagné dans l’app et dépensé dans l’app."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "LangX Token a-t-il un prix ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Non. Il n’a ni prix ni valeur monétaire, parce qu’il n’existe aucun endroit où l’acheter ou le vendre. Une cryptomonnaie au nom semblable sur un site de suivi des cours n’est pas LangX Token."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Puis-je acheter, vendre ou retirer des jetons ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Non. Les jetons ne peuvent pas être achetés, ni avec de l’argent ni avec quoi que ce soit d’autre, ni envoyés à un autre membre, ni sortis de l’app. Ils ne peuvent pas non plus débloquer Fluent ou Polyglot — ce sont des abonnements."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Combien de jetons puis-je gagner par jour ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Les messages rapportent jusqu’à 200 par jour, Echo jusqu’à 25, et une part de la cagnotte du jour jusqu’à 250. Les corrections, les réponses aux demandes de prononciation et les nouvelles conversations n’ont pas de plafond quotidien. Une journée très active rapporte environ 700 jetons."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Que sont devenus mes jetons de l’ancienne app LangX ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ils ont été repris, divisés par 100, et tu reçois en plus un bonus de retour de 250. Connecte-toi avec la même adresse e-mail qu’avant."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Dépenser des jetons fait-il baisser mon rang au classement ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Non. Les classements comptent les jetons gagnés, pas les jetons détenus. Dépenser fait baisser ton solde, jamais ton total de tous les temps."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body ontouchstart="">
+    <header id="header">
+      <a class="wordmark" href="https://langx.io" target="_blank" rel="noopener">LangX</a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#learn-to-earn">Barème</a>
+        <a href="#using-langx-tokens">Dépenser</a>
+        <a href="#questions">FAQ</a>
+        <a class="nav-cta" href="https://docs.langx.io/litepaper/token/token" target="_blank" rel="noopener">
+          Toutes les règles
+        </a>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <p class="kicker">
+        Des points dans l’app &middot; Pas de portefeuille &middot; Pas de marché &middot; Aucune
+        valeur monétaire
+      </p>
+      <h1>Pratique<br />pour marquer</h1>
+      <p class="lede">
+        LangX Token est le point que tu gagnes en parlant avec des gens dans une
+        langue que tu apprends &mdash; et en les aidant en retour. Chaque message
+        rapporte. Chaque correction rapporte
+        <span data-rule="derived.correctionPerMessage">10</span> fois plus.
+      </p>
+      <p class="footnote">
+        Ce n’est pas une cryptomonnaie. Il reste dans l’app
+        <a href="https://langx.io" target="_blank" rel="noopener noreferrer">LangX</a>
+        d’échange linguistique, et c’est tout le principe.
+      </p>
+
+      <section aria-labelledby="app-link-buttons">
+        <h2 id="app-link-buttons" class="sr-only">Commence à gagner des jetons maintenant</h2>
+        <div class="app-link-buttons">
+          <a
+            href="https://apps.apple.com/app/languagexchange/id6474187141"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Télécharger l’app sur l’App Store"
+          >
+            <img src="/images/ios.png" alt="Télécharger dans l’App Store" width="176" height="52" decoding="async" />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=tech.newchapter.languageXchange"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Télécharger l’app sur Google Play Store"
+          >
+            <img src="/images/android.png" alt="Disponible sur Google Play" width="176" height="52" decoding="async" />
+          </a>
+          <a
+            href="https://app.langx.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Ouvrir l’app web"
+          >
+            <img src="/images/pwa.png" alt="Ouvrir l’app web LangX" width="176" height="52" decoding="async" />
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <section aria-labelledby="token-leaderboard" class="token-leaderboard wrap">
+      <div class="board">
+        <header class="board-bar">
+          <h2 id="token-leaderboard">Meilleurs scores</h2>
+          <span class="board-period">De tous les temps</span>
+        </header>
+        <div aria-expanded="false" class="table-container">
+          <div aria-expanded="false" class="token-leaderboard-table">
+            <div class="always-show"></div>
+            <div aria-hidden="true" class="can-hide tbody"></div>
+          </div>
+        </div>
+        <div class="table-show" role="button" tabindex="0" data-more="Afficher plus ↓" data-less="Afficher moins ↑">
+          <p>Afficher plus ↓</p>
+        </div>
+      </div>
+      <p class="note">
+        Les dix membres qui ont gagné le plus de jetons, en direct depuis l’app.
+        Les classements de la semaine, du mois, de l’année et de tous les temps
+        sont dans l’app, où tu vois aussi ta propre place.
+      </p>
+    </section>
+
+    <main class="wrap">
+      <section class="block" aria-labelledby="what-langx-token-is">
+        <p class="kicker">01 &mdash; Ce que c’est</p>
+        <div class="split">
+          <h2 id="what-langx-token-is">Un point<br />dans l’app</h2>
+          <div class="prose">
+            <p>
+              <strong>
+                Tu le gagnes en utilisant l’app et tu le dépenses dans l’app.
+              </strong>
+              C’est toute la définition &mdash; il n’y a rien derrière, et rien
+              de plus.
+            </p>
+            <p>
+              C’est notre façon de te remercier d’être là, et de te donner une
+              raison de revenir demain. Chaque message que tu envoies et chaque
+              phrase que tu corriges, c’est ce qui fait vivre cet endroit. Le
+              jeton, c’est ce que tout cela finit par représenter. Tout le monde
+              commence avec
+              <span data-rule="signupBonus">250</span>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="learn-to-earn">
+        <p class="kicker">02 &mdash; Barème</p>
+        <h2 id="learn-to-earn">Comment on marque des points</h2>
+        <div class="cols">
+          <div class="panel">
+            <h3>Valeur des points</h3>
+            <dl class="values">
+              <div><dt>Envoyer un message</dt><dd>+<span data-rule="award.message">1</span></dd></div>
+              <div><dt>Corriger une phrase</dt><dd>+<span data-rule="award.correction">10</span></dd></div>
+              <div><dt>Répondre à une demande de prononciation</dt><dd>+<span data-rule="award.pronunciation">10</span></dd></div>
+              <div><dt>Première fois que vous parlez tous les deux</dt><dd>+<span data-rule="award.mutualConversation">15</span></dd></div>
+              <div><dt>Terminer une séance Echo</dt><dd>+<span data-rule="award.echoSession">5</span></dd></div>
+            </dl>
+            <p class="note">
+              Jusqu’à <span data-rule="caps.messagesPerDay">200</span> messages
+              par jour rapportent des points, dont au plus
+              <span data-rule="caps.messagesPerPartnerPerDay">60</span> avec un
+              même partenaire &mdash; il faut quatre personnes pour atteindre le
+              plafond. Echo récompense <span data-rule="caps.echoSessionsPerDay">5</span>
+              séances par jour. Les corrections n’ont pas de plafond &mdash;
+              enseigner compte plus que parler, et c’est voulu.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>Bonus de série</h3>
+            <div class="chart" role="img" aria-label="Bonus de série&nbsp;: 7 jours 50, 30 jours 250, 100 jours 1&nbsp;000, 180 jours 1&nbsp;500, 365 jours 5&nbsp;000, 730 jours 12&nbsp;000, 1&nbsp;095 jours 25&nbsp;000 jetons.">
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.7">50</span>
+                <div class="bar-fill" style="height: 16px"></div>
+                <span class="bar-label">7</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.30">250</span>
+                <div class="bar-fill" style="height: 37px"></div>
+                <span class="bar-label">30</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.100">1K</span>
+                <div class="bar-fill" style="height: 55px"></div>
+                <span class="bar-label">100</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.180">1,5K</span>
+                <div class="bar-fill" style="height: 60px"></div>
+                <span class="bar-label">180</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.365">5K</span>
+                <div class="bar-fill" style="height: 76px"></div>
+                <span class="bar-label">365</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.730">12K</span>
+                <div class="bar-fill" style="height: 87px"></div>
+                <span class="bar-label">730</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.1095">25K</span>
+                <div class="bar-fill is-top" style="height: 97px"></div>
+                <span class="bar-label">1095</span>
+              </div>
+            </div>
+            <p class="note">
+              Des jours d’affilée, et les jetons versés le jour où ta série les
+              atteint &mdash; pour un jour où tu as vraiment pratiqué, pas
+              seulement ouvert l’app.
+            </p>
+          </div>
+        </div>
+
+        <div class="pool">
+          <div class="pool-figure">
+            <strong data-rule="pool.total">5&nbsp;000</strong>
+            <span>Jetons, chaque jour</span>
+          </div>
+          <div class="pool-body">
+            <h3>La cagnotte du jour</h3>
+            <p>
+              En plus de ce que tu marques directement, une cagnotte fixe est
+              partagée à la fin de chaque journée entre toutes les personnes
+              actives, au prorata de leur activité. Ta part dépend de la journée
+              des autres autant que de la tienne &mdash; et personne ne peut en
+              toucher plus de
+              <span data-rule="derived.poolMaxSharePercent">5</span>&nbsp;%, soit
+              <span data-rule="derived.poolMaxShare">250</span> jetons.
+            </p>
+            <p>
+              Elle tombe à <span data-rule="pool.payoutHourUtc">04</span>:00 UTC
+              le lendemain matin. Les comptes de moins de
+              <span data-rule="pool.accountAgeRampUpHours">24</span> heures n’y
+              participent pas.
+            </p>
+          </div>
+        </div>
+
+        <div class="cols cols-more">
+          <div class="panel">
+            <h3>Inviter quelqu’un</h3>
+            <dl class="values">
+              <div><dt>Quand la personne écrit à quelqu’un pour la première fois</dt><dd>+<span data-rule="referral.activation">1&nbsp;000</span></dd></div>
+              <div><dt>Si elle prend un jour une formule payante</dt><dd>+<span data-rule="referral.subscription">4&nbsp;000</span></dd></div>
+            </dl>
+            <p class="note">
+              Jusqu’à <span data-rule="referral.maxPerInvitee">5&nbsp;000</span>
+              pour chaque personne que tu invites. Elle gagne
+              <span data-rule="referral.inviteeActivation">750</span> au même
+              moment, et démarre donc avec
+              <span data-rule="referral.inviteeTotal">1&nbsp;000</span>. Rien
+              n’est versé pour une simple inscription, et la personne qui paie
+              une formule ne reçoit aucun jeton pour avoir payé.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>Cadeau de l’heure</h3>
+            <p>
+              Un cadeau gratuit chaque heure dans la boutique de l’app. Il
+              contient de rien du tout à <span data-rule="derived.giftMax">250</span>
+              jetons &mdash; environ <span data-rule="derived.giftMean">11</span>
+              en moyenne, et à peu près un sur trois est vide.
+            </p>
+            <p class="note">
+              Les jetons des cadeaux vont à ton solde et à ton total de tous les
+              temps, jamais aux classements de la semaine, du mois ou de
+              l’année. Rien n’est acheté ni misé&nbsp;: c’est un cadeau, pas un
+              jeu de hasard.
+            </p>
+          </div>
+        </div>
+        <p class="note">
+          Ce sont les valeurs actuelles. L’économie est jeune, et les chiffres
+          peuvent changer à mesure que nous voyons comment elle se comporte avec
+          une activité réelle.
+        </p>
+      </section>
+
+      <section class="block" aria-labelledby="using-langx-tokens">
+        <p class="kicker">03 &mdash; Dépenser</p>
+        <h2 id="using-langx-tokens">Quatre façons de dépenser</h2>
+        <p class="prose-lede">
+          C’est la liste complète, et elle est complète exprès.
+        </p>
+        <div class="cols cols-flow">
+          <div class="panel">
+            <div class="panel-head">
+              <h3>Gel de série</h3>
+              <span class="price" data-rule="sinks.streakFreeze">200</span>
+            </div>
+            <p>
+              Rattrape un jour manqué, pour qu’une mauvaise journée n’efface pas
+              des mois de pratique. Tu peux en garder
+              <span data-rule="sinks.maxBankedStreakFreezes">2</span> en réserve
+              &mdash; assez pour faire face à la vraie vie, pas assez pour vider
+              la série de son sens.
+            </p>
+          </div>
+          <div class="panel">
+            <div class="panel-head">
+              <h3>Racheter un jour manqué</h3>
+              <span class="price" data-rule="sinks.dayRepair">600</span>
+            </div>
+            <p>
+              Remplit une case vide de ta carte d’activité, dans les
+              <span data-rule="sinks.dayRepairMaxAgeDays">14</span> derniers jours.
+              Limité à <span data-rule="sinks.dayRepairPerMonth">2</span> par mois,
+              et jamais aujourd’hui &mdash; aujourd’hui se mérite. Plus cher
+              qu’un gel, exprès&nbsp;: un gel s’achète avant le jour, celui-ci
+              après.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>Cadres &amp; titres</h3>
+            <dl class="values">
+              <div>
+                <dt><span data-rule="derived.frameCount">9</span> cadres</dt>
+                <dd><span data-rule="derived.frameMin">1&nbsp;000</span> &mdash; <span data-rule="derived.frameMax">35&nbsp;000</span></dd>
+              </div>
+              <div>
+                <dt><span data-rule="derived.titleCount">10</span> titres</dt>
+                <dd><span data-rule="derived.titleMin">1&nbsp;500</span> &mdash; <span data-rule="derived.titleMax">100&nbsp;000</span></dd>
+              </div>
+            </dl>
+            <p>
+              D’Ardoise à Minuit, et de Débutant à Légende. Un cadre de plus,
+              Aurore, ne s’obtient pas en économisant&nbsp;: il coûte
+              <span data-rule="cosmetic.frame.aurora.price">50&nbsp;000</span> et
+              exige une série de
+              <span data-rule="cosmetic.frame.aurora.requires.longestStreak">365</span>&nbsp;jours
+              et
+              <span data-rule="cosmetic.frame.aurora.requires.corrections">5&nbsp;000</span>
+              corrections écrites.
+            </p>
+            <p class="note">
+              Ils changent l’apparence de ton profil, et rien d’autre.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>Packs de stickers</h3>
+            <dl class="values">
+              <div><dt>Départ</dt><dd data-rule="cosmetic.stickers.starter.price">1&nbsp;000</dd></div>
+              <div><dt>Entraînement</dt><dd data-rule="cosmetic.stickers.practice.price">1&nbsp;000</dd></div>
+              <div><dt>Pixel</dt><dd data-rule="cosmetic.stickers.pixel.price">1&nbsp;500</dd></div>
+            </dl>
+            <p>
+              <span data-rule="derived.stickerPackCount">3</span> packs de
+              <span data-rule="derived.stickersPerPack">12</span> stickers à
+              envoyer dans une discussion&nbsp;: un pour ce que tu dis dans une
+              conversation, un pour la pratique elle-même, et un en pixel art
+              8&nbsp;bits. Pixel coûte plus cher parce que nous en avons dessiné
+              les douze&nbsp;; aucun pack n’est un cran au-dessus d’un autre,
+              alors commence par celui que tu veux.
+            </p>
+            <p class="note">
+              Aucun texte sur aucun d’eux. L’app se lit en huit langues.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="what-tokens-are-not">
+        <div class="negative">
+          <h2 id="what-tokens-are-not">Ce que ce n’est pas</h2>
+          <ul class="negative-list">
+            <li>Non achetable</li>
+            <li>Non échangeable</li>
+            <li>Non retirable</li>
+            <li>Non transférable</li>
+            <li>Pas sur une blockchain</li>
+            <li>Coté nulle part</li>
+          </ul>
+          <p>
+            <strong>Et il ne peut débloquer ni Fluent ni Polyglot.</strong> Ça,
+            c’est délibéré&nbsp;: si les jetons pouvaient acheter une fonction
+            payante, accumuler des jetons deviendrait un substitut à
+            l’abonnement &mdash; et c’est l’abonnement qui fait vivre l’app.
+          </p>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="returning-members">
+        <p class="kicker">04 &mdash; Retour</p>
+        <div class="split">
+          <div>
+            <h2 id="returning-members">Tu<br />reviens&nbsp;?</h2>
+            <div class="ratio">
+              <strong>÷ <span data-rule="legacyTokenDivisor">100</span></strong>
+              <span>Ancien solde, nouvelle échelle</span>
+            </div>
+          </div>
+          <div class="prose">
+            <p>
+              <strong>Ton solde est repris.</strong> Rien sur LangX n’a jamais
+              été acheté ni vendu &mdash; ce qui ressemblait à un journal
+              d’achats était en réalité le calcul de la distribution quotidienne
+              &mdash; donc chaque jeton de ton solde a été gagné, et il n’y a
+              aucune raison de ne pas l’honorer.
+            </p>
+            <p>
+              Les soldes sont divisés par 100 à l’arrivée, et nous préférons le
+              dire clairement plutôt que de te le laisser découvrir après coup.
+              Les anciens soldes montent jusqu’à 2,28 millions, alors qu’une
+              journée très active rapporte aujourd’hui environ 700 jetons. Repris
+              à l’identique, le plus gros solde aurait environ neuf ans d’avance
+              sur n’importe quel nouveau venu, et le classement de tous les temps
+              ne bougerait plus jamais. Divisé, il part avec environ un mois
+              d’avance &mdash; une vraie longueur d’avance, que quelqu’un d’autre
+              peut encore combler.
+            </p>
+            <p>
+              Tu reçois aussi un bonus de retour de
+              <span data-rule="welcomeBackBonus">250</span>, et ta série est
+              gelée plutôt que perdue&nbsp;: tu peux dépenser des jetons pour la
+              faire revenir. Connecte-toi avec la même adresse e-mail qu’avant
+              &mdash;
+              <a href="https://docs.langx.io/litepaper/library/coming-back" target="_blank" rel="noopener">voici comment</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="questions">
+        <p class="kicker">05 &mdash; Questions</p>
+        <h2 id="questions">Des réponses franches</h2>
+        <div class="faq">
+          <div class="faq-item">
+            <h3 data-faq-q>LangX Token est-il une cryptomonnaie&nbsp;?</h3>
+            <div data-faq-a>
+              <p>Non. Il n’est pas sur une blockchain, il n’a ni contrat ni adresse de portefeuille, et il n’est coté sur aucune plateforme d’échange. C’est un nombre dans ton compte LangX, gagné dans l’app et dépensé dans l’app.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>LangX Token a-t-il un prix&nbsp;?</h3>
+            <div data-faq-a>
+              <p>Non. Il n’a ni prix ni valeur monétaire, parce qu’il n’existe aucun endroit où l’acheter ou le vendre. Une cryptomonnaie au nom semblable sur un site de suivi des cours n’est pas LangX Token.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>Puis-je acheter, vendre ou retirer des jetons&nbsp;?</h3>
+            <div data-faq-a>
+              <p>Non. Les jetons ne peuvent pas être achetés, ni avec de l’argent ni avec quoi que ce soit d’autre, ni envoyés à un autre membre, ni sortis de l’app. Ils ne peuvent pas non plus débloquer Fluent ou Polyglot — ce sont des abonnements.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>Combien de jetons puis-je gagner par jour&nbsp;?</h3>
+            <div data-faq-a>
+              <p>Les messages rapportent jusqu’à <span data-rule="caps.messagesPerDay">200</span> par jour, Echo jusqu’à <span data-rule="derived.echoDailyMax">25</span>, et une part de la cagnotte du jour jusqu’à <span data-rule="derived.poolMaxShare">250</span>. Les corrections, les réponses aux demandes de prononciation et les nouvelles conversations n’ont pas de plafond quotidien. Une journée très active rapporte environ 700 jetons.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>Que sont devenus mes jetons de l’ancienne app LangX&nbsp;?</h3>
+            <div data-faq-a>
+              <p>Ils ont été repris, divisés par <span data-rule="legacyTokenDivisor">100</span>, et tu reçois en plus un bonus de retour de <span data-rule="welcomeBackBonus">250</span>. Connecte-toi avec la même adresse e-mail qu’avant.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>Dépenser des jetons fait-il baisser mon rang au classement&nbsp;?</h3>
+            <div data-faq-a>
+              <p>Non. Les classements comptent les jetons gagnés, pas les jetons détenus. Dépenser fait baisser ton solde, jamais ton total de tous les temps.</p>
+            </div>
+          </div>
+        </div>
+        <p class="note">
+          Toutes les règles, tous les plafonds et toutes les formules, avec des
+          exemples chiffrés, sont dans la
+          <a href="https://docs.langx.io/litepaper/token/token" target="_blank" rel="noopener">documentation LangX</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content wrap">
+        <div class="copy">
+          <p class="copyright">© 2026 LangX — Pratique, apprends, réussis</p>
+          <p class="disclaimer">
+            Les LangX Tokens sont des points internes à l’app. Ils n’ont aucune
+            valeur monétaire et ne peuvent être ni achetés, ni vendus, ni
+            échangés, ni retirés.
+          </p>
+          <p class="disclaimer">
+            <a href="/privacy">Confidentialité</a> ·
+            <a
+              href="https://langx.io/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Politique de confidentialité de l’app</a
+            >
+          </p>
+          <nav class="languages" aria-label="Langue">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/tr/" hreflang="tr" lang="tr">Türkçe</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/fr/" hreflang="fr" lang="fr" aria-current="page">Français</a>
+            <a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a>
+            <a href="/ru/" hreflang="ru" lang="ru">Русский</a>
+            <a href="/ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a>
+          </nav>
+        </div>
+        <div class="buttons">
+          <a class="social" href="https://discord.langx.io" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/discord.svg" alt="Discord" />
+          </a>
+          <a class="social" href="https://t.me/languageXapp" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/telegram.svg" alt="Telegram" />
+          </a>
+          <a class="social" href="https://x.com/langx_io" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/x.svg" alt="X" />
+          </a>
+          <a class="social" href="https://tiktok.com/@langxapp" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/tiktok.svg" alt="TikTok" />
+          </a>
+          <a class="social" href="https://www.facebook.com/langxapp" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/facebook.svg" alt="Facebook" />
+          </a>
+          <a class="social" href="https://www.youtube.com/@langxapp" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/youtube.svg" alt="YouTube" />
+          </a>
+          <a class="social" href="https://bsky.app/profile/langx.io" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/bluesky.svg" alt="Bluesky" />
+          </a>
+          <a class="social" href="https://github.com/langx" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/github.svg" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/hero.js" defer></script>
+    <script src="/js/leaderboard-token.js" defer></script>
+    <script defer src="/js/posthog.js"></script>
+    <script defer src="/js/analytics.js"></script>
+  </body>
+</html>

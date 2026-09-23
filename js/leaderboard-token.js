@@ -1,4 +1,3 @@
-// URL de la API
 const apiUrl = 'https://api.langx.io/public/leaderboard/token';
 
 const table = document.querySelector(".token-leaderboard-table");
@@ -26,9 +25,19 @@ async function getData() {
     }
 }
 
-toggleShow.addEventListener("click", (e) => {
-    const toggleShow = e.target;
-    toggledDropDown(toggleShow, dropDownCol);
+// The labels live on the element, not here, so each language's page can say
+// "Show more" in its own words.
+const moreLabel = toggleShow.dataset.more || "Show more ↓";
+const lessLabel = toggleShow.dataset.less || "Show less ↑";
+
+toggleShow.addEventListener("click", () => {
+    toggledDropDown(toggleShow.querySelector("p"), dropDownCol);
+});
+
+toggleShow.addEventListener("keydown", (e) => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+    e.preventDefault();
+    toggledDropDown(toggleShow.querySelector("p"), dropDownCol);
 });
 
 function toggledDropDown(toggleShow, dropDownCol) {
@@ -39,12 +48,12 @@ function toggledDropDown(toggleShow, dropDownCol) {
         document.querySelector(".table-container").setAttribute("aria-expanded", false);
         dropDownCol.setAttribute("aria-expanded", false);
         columns.setAttribute("aria-hidden", true);
-        toggleShow.textContent = "Show more  ↓"
+        toggleShow.textContent = moreLabel
     } else {
         document.querySelector(".table-container").setAttribute("aria-expanded", true);
         dropDownCol.setAttribute("aria-expanded", true);
         columns.setAttribute("aria-hidden", false);
-        toggleShow.textContent = "Show less  ↑"
+        toggleShow.textContent = lessLabel
     }
 }
 

@@ -38,8 +38,33 @@ in the repository is what ships.
 > **Keeping the numbers honest.** The earning rates, caps, daily pool and item
 > prices on this page are published values from the app's own configuration —
 > `packages/shared/src/token.ts` (`TOKEN_RULES`) and `cosmetics.ts` in the
-> [langx2](https://github.com/langx-io/langx2) repository. If those change, this
-> page has to change with them.
+> [langx](https://github.com/langx/langx) repository. If those change, this
+> page has to change with them — and now something notices when they do. Every
+> figure taken from that configuration is marked `data-rule="<key>"`, and
+> [`tools/check-token-rules.mjs`](tools/check-token-rules.mjs) fails when one
+> disagrees with the app, or when the app has a rule the page never mentions.
+> It runs on every push and pull request and every morning against the app's
+> `main` ([`token-rules.yml`](.github/workflows/token-rules.yml)). Locally:
+>
+> ```bash
+> LANGX_SHARED_DIR=../langx/packages/shared/src node tools/check-token-rules.mjs
+> ```
+>
+> The same script checks each page's canonical and hreflang links, the sitemap,
+> and that the FAQ's JSON-LD says word for word what the visible FAQ says.
+
+> **Languages.** The page is published in the app's eight languages: English at
+> `/`, and `tr/`, `de/`, `es/`, `fr/`, `pt-br/`, `ru/` and `ar/`, each a full
+> copy of `index.html`. A change to the English page is a change to all eight;
+> the check above will fail on any copy whose figures or FAQ fall behind.
+> Bungee and Space Mono have no Cyrillic or Arabic, so `ru/` and `ar/` load one
+> extra face each for those letters (see the top of `css/style.css`).
+
+> **Search.** `robots.txt`, `sitemap.xml` and `404.html` exist so Cloudflare
+> Pages stops treating this as a single-page app — without a `404.html` it
+> answers every unknown path, `robots.txt` included, with the homepage and a
+> 200. `_headers` keeps the maintenance page, `tools/` and this README out of
+> search results.
 
 ## Table of Contents
 

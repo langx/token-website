@@ -1,0 +1,26 @@
+# The page quotes the app's token rules. The app changes them without telling
+# this repository, so the check also runs every morning against langx/langx
+# main — a scheduled failure is the page going stale, not this repo breaking.
+name: Token rules
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - name: Page figures match TOKEN_RULES and COSMETICS
+        run: node tools/check-token-rules.mjs
