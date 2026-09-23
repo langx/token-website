@@ -1,0 +1,5 @@
+# token.langx.io — one page in eight languages, plus a privacy page.
+User-agent: *
+Allow: /
+
+Sitemap: https://token.langx.io/sitemap.xml

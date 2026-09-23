@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LangX Token — Dil değişimi için uygulama içi puan</title>
+    <meta
+      name="description"
+      content="LangX Token, LangX’te dil pratiği yaparak ve öğreterek kazandığın uygulama içi puandır. Kripto para değildir: fiyatı yok, alım satımı yok, cüzdanı yok."
+    />
+    <link rel="canonical" href="https://token.langx.io/tr/" />
+    <link rel="alternate" hreflang="en" href="https://token.langx.io/" />
+    <link rel="alternate" hreflang="tr" href="https://token.langx.io/tr/" />
+    <link rel="alternate" hreflang="de" href="https://token.langx.io/de/" />
+    <link rel="alternate" hreflang="es" href="https://token.langx.io/es/" />
+    <link rel="alternate" hreflang="fr" href="https://token.langx.io/fr/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://token.langx.io/pt-br/" />
+    <link rel="alternate" hreflang="ru" href="https://token.langx.io/ru/" />
+    <link rel="alternate" hreflang="ar" href="https://token.langx.io/ar/" />
+    <link rel="alternate" hreflang="x-default" href="https://token.langx.io/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LangX" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:url" content="https://token.langx.io/tr/" />
+    <meta
+      property="og:title"
+      content="LangX Token — Pratik yaparak ve öğreterek puan kazan"
+    />
+    <meta
+      property="og:description"
+      content="LangX Token, LangX’te dil pratiği yaparak ve öğreterek kazandığın uygulama içi puandır. Kripto para değildir: fiyatı yok, alım satımı yok, cüzdanı yok."
+    />
+    <meta property="og:image" content="https://token.langx.io/images/site-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="LangX Token — pratik yap, puan topla. Uygulama içi puan; cüzdan yok, alım satım yok, nakit değeri yok."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@langx_io" />
+    <meta
+      name="twitter:title"
+      content="LangX Token — Pratik yaparak ve öğreterek puan kazan"
+    />
+    <meta
+      name="twitter:description"
+      content="LangX Token, LangX’te dil pratiği yaparak ve öğreterek kazandığın uygulama içi puandır. Kripto para değildir: fiyatı yok, alım satımı yok, cüzdanı yok."
+    />
+    <meta name="twitter:image" content="https://token.langx.io/images/site-preview.png" />
+    <meta name="theme-color" content="#130900" />
+
+    <!--
+      The hero heading animates in. It is hidden only while GSAP is on its way,
+      only for visitors who have not asked for reduced motion, and never for
+      longer than a second and a half — so a slow or missing script costs the
+      animation, not the headline. GSAP is deferred rather than render-blocking.
+    -->
+    <script>
+      (function (root) {
+        if (!window.matchMedia || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        root.classList.add("intro");
+        setTimeout(function () { root.classList.remove("intro"); }, 1500);
+      })(document.documentElement);
+    </script>
+    <script defer src="/js/gsap.min.js"></script>
+    <script defer src="/js/SplitText.min.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://langx.io/#organization",
+            "name": "LangX",
+            "url": "https://langx.io/",
+            "logo": "https://token.langx.io/images/apple-touch-icon.png",
+            "email": "hi@langx.io",
+            "sameAs": [
+              "https://github.com/langx",
+              "https://x.com/langx_io",
+              "https://www.facebook.com/langxapp",
+              "https://www.youtube.com/@langxapp",
+              "https://tiktok.com/@langxapp",
+              "https://bsky.app/profile/langx.io",
+              "https://t.me/languageXapp",
+              "https://discord.langx.io"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://token.langx.io/#website",
+            "url": "https://token.langx.io/",
+            "name": "LangX Token",
+            "publisher": { "@id": "https://langx.io/#organization" },
+            "inLanguage": ["en", "tr", "de", "es", "fr", "pt-BR", "ru", "ar"]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://token.langx.io/tr/#webpage",
+            "url": "https://token.langx.io/tr/",
+            "name": "LangX Token — Dil değişimi için uygulama içi puan",
+            "isPartOf": { "@id": "https://token.langx.io/#website" },
+            "about": { "@id": "https://langx.io/#organization" },
+            "inLanguage": "tr",
+            "primaryImageOfPage": "https://token.langx.io/images/site-preview.png"
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://token.langx.io/tr/#faq",
+            "inLanguage": "tr",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "LangX Token bir kripto para mı?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hayır. Bir blokzincirde değil, akıllı sözleşmesi ya da cüzdan adresi yok ve hiçbir borsada listelenmiyor. LangX hesabındaki bir sayıdır; uygulamada kazanılır, uygulamada harcanır."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "LangX Token’ın bir fiyatı var mı?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hayır. Ne fiyatı ne de nakit değeri var, çünkü alınıp satılabileceği bir yer yok. Fiyat takip sitelerinde benzer adlı bir coin görürsen, o LangX Token değildir."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Jeton satın alabilir, satabilir ya da çekebilir miyim?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hayır. Jetonlar parayla ya da başka herhangi bir şeyle satın alınamaz, başka bir üyeye gönderilemez, uygulamanın dışına çıkarılamaz. Fluent ya da Polyglot’u da açamazlar — onlar abonelik."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Bir günde kaç jeton kazanabilirim?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Mesajlar günde en fazla 200, Echo en fazla 25, günlük havuzdaki payın da en fazla 250 jeton getirir. Düzeltmelerin, telaffuz yanıtlarının ve yeni sohbetlerin günlük tavanı yok. Çok aktif bir gün yaklaşık 700 jeton eder."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Eski LangX uygulamasındaki jetonlarıma ne oldu?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "100’e bölünerek aktarıldılar; üstüne 250 jetonluk bir tekrar hoş geldin ödülü de alırsın. Daha önce kullandığın e-posta adresiyle giriş yap."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Jeton harcamak liderlik tablosundaki sıramı düşürür mü?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hayır. Liderlik tabloları elde tutulan jetonu değil, kazanılan jetonu sıralar. Harcamak bakiyeni düşürür, tüm zamanlar toplamını asla."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body ontouchstart="">
+    <header id="header">
+      <a class="wordmark" href="https://langx.io" target="_blank" rel="noopener">LangX</a>
+      <nav class="nav" aria-label="Bölümler">
+        <a href="#learn-to-earn">Puanlama</a>
+        <a href="#using-langx-tokens">Harcama</a>
+        <a href="#questions">SSS</a>
+        <a class="nav-cta" href="https://docs.langx.io/litepaper/token/token" target="_blank" rel="noopener">
+          Tüm kurallar
+        </a>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <p class="kicker">
+        Uygulama içi puan &middot; Cüzdan yok &middot; Alım satım yok &middot;
+        Nakit değeri yok
+      </p>
+      <h1>Pratik yap<br />puan topla</h1>
+      <p class="lede">
+        LangX Token, öğrendiğin dilde insanlarla konuştuğun için kazandığın
+        puandır &mdash; onlara karşılığında yardım ettiğin için de. Her mesaj
+        puan getirir. Her düzeltme
+        <span data-rule="derived.correctionPerMessage">10</span> kat fazlasını.
+      </p>
+      <p class="footnote">
+        Kripto para değildir.
+        <a href="https://langx.io" target="_blank" rel="noopener noreferrer">LangX</a>
+        dil değişimi uygulamasının içinde kalır; bütün tasarım da bundan ibaret.
+      </p>
+
+      <section aria-labelledby="app-link-buttons">
+        <h2 id="app-link-buttons" class="sr-only">Hemen jeton kazanmaya başla</h2>
+        <div class="app-link-buttons">
+          <a
+            href="https://apps.apple.com/app/languagexchange/id6474187141"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Uygulamayı App Store’dan indir"
+          >
+            <img src="/images/ios.png" alt="App Store’dan İndirin" width="176" height="52" decoding="async" />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=tech.newchapter.languageXchange"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Uygulamayı Google Play Store’dan indir"
+          >
+            <img src="/images/android.png" alt="Google Play’den Alın" width="176" height="52" decoding="async" />
+          </a>
+          <a
+            href="https://app.langx.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Web uygulamasını aç"
+          >
+            <img src="/images/pwa.png" alt="LangX web uygulamasını aç" width="176" height="52" decoding="async" />
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <section aria-labelledby="token-leaderboard" class="token-leaderboard wrap">
+      <div class="board">
+        <header class="board-bar">
+          <h2 id="token-leaderboard">En yüksek skorlar</h2>
+          <span class="board-period">Tüm zamanlar</span>
+        </header>
+        <div aria-expanded="false" class="table-container">
+          <div aria-expanded="false" class="token-leaderboard-table">
+            <div class="always-show"></div>
+            <div aria-hidden="true" class="can-hide tbody"></div>
+          </div>
+        </div>
+        <div class="table-show" role="button" tabindex="0" data-more="Daha fazla göster ↓" data-less="Daha az göster ↑">
+          <p>Daha fazla göster ↓</p>
+        </div>
+      </div>
+      <p class="note">
+        En çok jeton kazanmış 10 üye, uygulamadan canlı olarak. Haftalık,
+        aylık, yıllık ve tüm zamanlar tabloları uygulamada; kendi sıranı da
+        orada görebilirsin.
+      </p>
+    </section>
+
+    <main class="wrap">
+      <section class="block" aria-labelledby="what-langx-token-is">
+        <p class="kicker">01 &mdash; Nedir</p>
+        <div class="split">
+          <h2 id="what-langx-token-is">Uygulama içi<br />bir puan</h2>
+          <div class="prose">
+            <p>
+              <strong>
+                Uygulamayı kullanarak kazanırsın, uygulamanın içinde harcarsın.
+              </strong>
+              Tanımın tamamı bu &mdash; arkasında bir şey yok, fazlası da
+              yok.
+            </p>
+            <p>
+              Burada olduğun için sana teşekkür etme biçimimiz, yarın yine
+              gelmen için de bir sebep. Gönderdiğin her mesaj ve düzelttiğin
+              her cümle burayı ayakta tutan şey. Jeton da bunların toplamı.
+              Herkes <span data-rule="signupBonus">250</span> jetonla başlar.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="learn-to-earn">
+        <p class="kicker">02 &mdash; Puanlama</p>
+        <h2 id="learn-to-earn">Puanlar nasıl kazanılır</h2>
+        <div class="cols">
+          <div class="panel">
+            <h3>Puan değerleri</h3>
+            <dl class="values">
+              <div><dt>Mesaj gönder</dt><dd>+<span data-rule="award.message">1</span></dd></div>
+              <div><dt>Bir cümleyi düzelt</dt><dd>+<span data-rule="award.correction">10</span></dd></div>
+              <div><dt>Bir telaffuz sorusunu yanıtla</dt><dd>+<span data-rule="award.pronunciation">10</span></dd></div>
+              <div><dt>İkinizin ilk karşılıklı konuşması</dt><dd>+<span data-rule="award.mutualConversation">15</span></dd></div>
+              <div><dt>Bir Echo oturumunu bitir</dt><dd>+<span data-rule="award.echoSession">5</span></dd></div>
+            </dl>
+            <p class="note">
+              Günde en fazla <span data-rule="caps.messagesPerDay">200</span>
+              mesaj puan getirir, tek bir partnerden en fazla
+              <span data-rule="caps.messagesPerPartnerPerDay">60</span> &mdash;
+              tavana ulaşmak için dört kişiyle konuşmak gerekir. Echo’da günde
+              <span data-rule="caps.echoSessionsPerDay">5</span> oturum puan
+              getirir. Düzeltmelerin tavanı yok &mdash; öğretmek, konuşmaktan
+              bilerek daha ağır basar.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>Seri ödülü</h3>
+            <div class="chart" role="img" aria-label="Seri ödülleri: 7 gün 50, 30 gün 250, 100 gün 1.000, 180 gün 1.500, 365 gün 5.000, 730 gün 12.000, 1.095 gün 25.000 jeton.">
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.7">50</span>
+                <div class="bar-fill" style="height: 16px"></div>
+                <span class="bar-label">7</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.30">250</span>
+                <div class="bar-fill" style="height: 37px"></div>
+                <span class="bar-label">30</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.100">1K</span>
+                <div class="bar-fill" style="height: 55px"></div>
+                <span class="bar-label">100</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.180">1,5K</span>
+                <div class="bar-fill" style="height: 60px"></div>
+                <span class="bar-label">180</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.365">5K</span>
+                <div class="bar-fill" style="height: 76px"></div>
+                <span class="bar-label">365</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.730">12K</span>
+                <div class="bar-fill" style="height: 87px"></div>
+                <span class="bar-label">730</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.1095">25K</span>
+                <div class="bar-fill is-top" style="height: 97px"></div>
+                <span class="bar-label">1095</span>
+              </div>
+            </div>
+            <p class="note">
+              Üst üste gün sayısı ve serin o sayıya ulaştığı gün yatan jetonlar
+              &mdash; uygulamayı yalnızca açtığın değil, gerçekten pratik
+              yaptığın bir gün için ödenir.
+            </p>
+          </div>
+        </div>
+
+        <div class="pool">
+          <div class="pool-figure">
+            <strong data-rule="pool.total">5.000</strong>
+            <span>Jeton, her gün</span>
+          </div>
+          <div class="pool-body">
+            <h3>Günlük havuz</h3>
+            <p>
+              Doğrudan kazandıklarının üstüne, sabit bir havuz her günün
+              sonunda o gün aktif olan herkes arasında, ne kadar aktif
+              olduklarıyla orantılı olarak paylaştırılır. Payın senin günün
+              kadar herkesin gününe de bağlıdır &mdash; ve kimse havuzun
+              %<span data-rule="derived.poolMaxSharePercent">5</span>’inden, yani
+              <span data-rule="derived.poolMaxShare">250</span> jetondan fazlasını
+              alamaz.
+            </p>
+            <p>
+              Ertesi sabah <span data-rule="pool.payoutHourUtc">04</span>:00 UTC’de
+              yatar. Açılalı
+              <span data-rule="pool.accountAgeRampUpHours">24</span> saat olmamış
+              hesaplar bu paylaşıma katılmaz.
+            </p>
+          </div>
+        </div>
+
+        <div class="cols cols-more">
+          <div class="panel">
+            <h3>Arkadaşını davet et</h3>
+            <dl class="values">
+              <div><dt>Birine ilk kez yazdığında</dt><dd>+<span data-rule="referral.activation">1.000</span></dd></div>
+              <div><dt>Bir gün ücretli bir plana geçerse</dt><dd>+<span data-rule="referral.subscription">4.000</span></dd></div>
+            </dl>
+            <p class="note">
+              Davet ettiğin her kişi için en fazla
+              <span data-rule="referral.maxPerInvitee">5.000</span>. O da aynı
+              anda <span data-rule="referral.inviteeActivation">750</span>
+              kazanır, böylece
+              <span data-rule="referral.inviteeTotal">1.000</span> ile başlar.
+              Yalnızca kaydolmak için hiçbir şey ödenmez; bir plana para ödeyen
+              kişi de ödediği için jeton almaz.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>Saatlik hediye</h3>
+            <p>
+              Uygulamanın mağazasında her saat ücretsiz bir hediye. İçinden
+              hiçbir şey çıkmayabilir, <span data-rule="derived.giftMax">250</span>
+              jetona kadar da çıkabilir &mdash; ortalama
+              <span data-rule="derived.giftMean">11</span> civarı; yaklaşık üçte
+              biri boş.
+            </p>
+            <p class="note">
+              Hediye jetonları bakiyene ve tüm zamanlar toplamına eklenir;
+              haftalık, aylık ya da yıllık tablolara asla. Hiçbir şey satın
+              alınmaz, hiçbir şey ortaya konmaz: bu bir hediye, şans oyunu değil.
+            </p>
+          </div>
+        </div>
+        <p class="note">
+          Bunlar şu anki değerler. Ekonomi daha yeni; gerçek kullanımda nasıl
+          davrandığını öğrendikçe rakamlar değişebilir.
+        </p>
+      </section>
+
+      <section class="block" aria-labelledby="using-langx-tokens">
+        <p class="kicker">03 &mdash; Harcama</p>
+        <h2 id="using-langx-tokens">Harcanacak dört şey</h2>
+        <p class="prose-lede">
+          Listenin tamamı bu, ve bilerek bu kadar.
+        </p>
+        <div class="cols cols-flow">
+          <div class="panel">
+            <div class="panel-head">
+              <h3>Seri dondurma</h3>
+              <span class="price" data-rule="sinks.streakFreeze">200</span>
+            </div>
+            <p>
+              Kaçırdığın bir günü kurtarır; tek bir kötü gün aylarca yaptığın
+              pratiği silip götürmez. Aynı anda
+              <span data-rule="sinks.maxBankedStreakFreezes">2</span> tane
+              biriktirebilirsin &mdash; gerçek hayata yetecek kadar, seriyi
+              anlamsız kılacak kadar değil.
+            </p>
+          </div>
+          <div class="panel">
+            <div class="panel-head">
+              <h3>Bir günü geri al</h3>
+              <span class="price" data-rule="sinks.dayRepair">600</span>
+            </div>
+            <p>
+              Aktivite haritandaki boş bir kareyi doldurur; son
+              <span data-rule="sinks.dayRepairMaxAgeDays">14</span> gün içinden.
+              Ayda <span data-rule="sinks.dayRepairPerMonth">2</span> kez, bugün
+              için asla &mdash; bugün kazanılır. Dondurmadan bilerek daha
+              pahalı: dondurma o günden önce alınır, bu ise sonra.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>Çerçeveler ve unvanlar</h3>
+            <dl class="values">
+              <div>
+                <dt><span data-rule="derived.frameCount">9</span> çerçeve</dt>
+                <dd><span data-rule="derived.frameMin">1.000</span> &mdash; <span data-rule="derived.frameMax">35.000</span></dd>
+              </div>
+              <div>
+                <dt><span data-rule="derived.titleCount">10</span> unvan</dt>
+                <dd><span data-rule="derived.titleMin">1.500</span> &mdash; <span data-rule="derived.titleMax">100.000</span></dd>
+              </div>
+            </dl>
+            <p>
+              Arduvaz’dan Gece yarısı’na, Yeni başlayan’dan Efsane’ye. Bir
+              çerçeve daha var, Kutup ışığı; ona yalnızca biriktirerek ulaşılmaz:
+              <span data-rule="cosmetic.frame.aurora.price">50.000</span> jeton
+              tutar, ayrıca
+              <span data-rule="cosmetic.frame.aurora.requires.longestStreak">365</span>
+              günlük bir seri ve yazılmış
+              <span data-rule="cosmetic.frame.aurora.requires.corrections">5.000</span>
+              düzeltme ister.
+            </p>
+            <p class="note">
+              Yalnızca profilinin görünüşünü değiştirirler, başka hiçbir şeyi
+              değil.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>Sticker paketleri</h3>
+            <dl class="values">
+              <div><dt>Başlangıç</dt><dd data-rule="cosmetic.stickers.starter.price">1.000</dd></div>
+              <div><dt>Pratik</dt><dd data-rule="cosmetic.stickers.practice.price">1.000</dd></div>
+              <div><dt>Pixel</dt><dd data-rule="cosmetic.stickers.pixel.price">1.500</dd></div>
+            </dl>
+            <p>
+              <span data-rule="derived.stickerPackCount">3</span> paket, her
+              birinde sohbette gönderebileceğin
+              <span data-rule="derived.stickersPerPack">12</span> sticker: biri
+              konuşmada söylediklerin için, biri pratiğin kendisi için, biri
+              de 8-bit piksel sanatıyla. Pixel daha pahalı, çünkü on ikisini de
+              biz çizdik; hiçbir paket diğerinden bir basamak yukarıda
+              değil, hangisinden başlayacağın sana kalmış.
+            </p>
+            <p class="note">
+              Hiçbirinde yazı yok. Uygulama sekiz dilde okunuyor.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="what-tokens-are-not">
+        <div class="negative">
+          <h2 id="what-tokens-are-not">Ne değildir</h2>
+          <ul class="negative-list">
+            <li>Satın alınamaz</li>
+            <li>Takas edilemez</li>
+            <li>Çekilemez</li>
+            <li>Başkasına aktarılamaz</li>
+            <li>Blokzincirde değil</li>
+            <li>Hiçbir yerde listelenmez</li>
+          </ul>
+          <p>
+            <strong>Fluent ya da Polyglot’u da açamaz.</strong> Bu bilinçli:
+            jetonlarla ücretli bir özellik alınabilseydi, jeton kasmak abone
+            olmanın yerini tutardı &mdash; oysa uygulamanın masrafını abonelik
+            karşılıyor.
+          </p>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="returning-members">
+        <p class="kicker">04 &mdash; Dönüş</p>
+        <div class="split">
+          <div>
+            <h2 id="returning-members">Geri mi<br />dönüyorsun?</h2>
+            <div class="ratio">
+              <strong>÷ <span data-rule="legacyTokenDivisor">100</span></strong>
+              <span>Eski bakiye, yeni ölçek</span>
+            </div>
+          </div>
+          <div class="prose">
+            <p>
+              <strong>Bakiyen seninle gelir.</strong> LangX’te hiçbir zaman
+              hiçbir şey alınıp satılmadı &mdash; satın alma kaydı gibi görünen
+              şey aslında günlük ödemenin hesaplanmasıydı &mdash; yani
+              bakiyendeki her jeton kazanılmıştı ve onu tanımamak için hiçbir
+              sebep yok.
+            </p>
+            <p>
+              Bakiyeler aktarılırken 100’e bölünür; bunu sonradan fark etmeni
+              beklemektense açıkça söylemeyi tercih ederiz. Eski bakiyeler 2,28
+              milyona kadar çıkıyor; oysa çok aktif bir gün artık yaklaşık 700
+              jeton. Bire bir aktarılsaydı en büyük bakiye, yeni gelen herkesin
+              kabaca dokuz yıl önünde olurdu ve tüm zamanlar tablosu bir daha
+              hiç kıpırdamazdı. Bölününce yaklaşık bir ay önde başlıyor &mdash;
+              gerçek bir avantaj, ama başka birinin yine de kapatabileceği bir
+              fark.
+            </p>
+            <p>
+              Ayrıca <span data-rule="welcomeBackBonus">250</span> jetonluk bir
+              tekrar hoş geldin ödülü alırsın, önceki serin de kaybolmaz,
+              dondurulur: jeton harcayarak geri getirebilirsin. Daha önce
+              kullandığın e-posta adresiyle giriş yap &mdash;
+              <a href="https://docs.langx.io/litepaper/library/coming-back" target="_blank" rel="noopener">nasıl yapılacağı burada</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="questions">
+        <p class="kicker">05 &mdash; Sorular</p>
+        <h2 id="questions">Net cevaplar</h2>
+        <div class="faq">
+          <div class="faq-item">
+            <h3 data-faq-q>LangX Token bir kripto para mı?</h3>
+            <div data-faq-a>
+              <p>Hayır. Bir blokzincirde değil, akıllı sözleşmesi ya da cüzdan adresi yok ve hiçbir borsada listelenmiyor. LangX hesabındaki bir sayıdır; uygulamada kazanılır, uygulamada harcanır.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>LangX Token’ın bir fiyatı var mı?</h3>
+            <div data-faq-a>
+              <p>Hayır. Ne fiyatı ne de nakit değeri var, çünkü alınıp satılabileceği bir yer yok. Fiyat takip sitelerinde benzer adlı bir coin görürsen, o LangX Token değildir.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>Jeton satın alabilir, satabilir ya da çekebilir miyim?</h3>
+            <div data-faq-a>
+              <p>Hayır. Jetonlar parayla ya da başka herhangi bir şeyle satın alınamaz, başka bir üyeye gönderilemez, uygulamanın dışına çıkarılamaz. Fluent ya da Polyglot’u da açamazlar — onlar abonelik.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>Bir günde kaç jeton kazanabilirim?</h3>
+            <div data-faq-a>
+              <p>Mesajlar günde en fazla <span data-rule="caps.messagesPerDay">200</span>, Echo en fazla <span data-rule="derived.echoDailyMax">25</span>, günlük havuzdaki payın da en fazla <span data-rule="derived.poolMaxShare">250</span> jeton getirir. Düzeltmelerin, telaffuz yanıtlarının ve yeni sohbetlerin günlük tavanı yok. Çok aktif bir gün yaklaşık 700 jeton eder.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>Eski LangX uygulamasındaki jetonlarıma ne oldu?</h3>
+            <div data-faq-a>
+              <p><span data-rule="legacyTokenDivisor">100</span>’e bölünerek aktarıldılar; üstüne <span data-rule="welcomeBackBonus">250</span> jetonluk bir tekrar hoş geldin ödülü de alırsın. Daha önce kullandığın e-posta adresiyle giriş yap.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>Jeton harcamak liderlik tablosundaki sıramı düşürür mü?</h3>
+            <div data-faq-a>
+              <p>Hayır. Liderlik tabloları elde tutulan jetonu değil, kazanılan jetonu sıralar. Harcamak bakiyeni düşürür, tüm zamanlar toplamını asla.</p>
+            </div>
+          </div>
+        </div>
+        <p class="note">
+          Her kural, tavan ve formül, örnek hesaplarıyla birlikte
+          <a href="https://docs.langx.io/litepaper/token/token" target="_blank" rel="noopener">LangX belgelerinde</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content wrap">
+        <div class="copy">
+          <p class="copyright">© 2026 LangX — Pratik yap, öğren, başar</p>
+          <p class="disclaimer">
+            LangX Token’lar uygulama içi puandır. Nakit değerleri yoktur;
+            satın alınamaz, satılamaz, takas edilemez ve çekilemezler.
+          </p>
+          <p class="disclaimer">
+            <a href="/privacy">Gizlilik</a> ·
+            <a
+              href="https://langx.io/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Uygulama gizlilik politikası</a
+            >
+          </p>
+          <nav class="languages" aria-label="Dil">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/tr/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a>
+            <a href="/ru/" hreflang="ru" lang="ru">Русский</a>
+            <a href="/ar/" hreflang="ar" lang="ar" dir="rtl">العربية</a>
+          </nav>
+        </div>
+        <div class="buttons">
+          <a class="social" href="https://discord.langx.io" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/discord.svg" alt="Discord" />
+          </a>
+          <a class="social" href="https://t.me/languageXapp" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/telegram.svg" alt="Telegram" />
+          </a>
+          <a class="social" href="https://x.com/langx_io" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/x.svg" alt="X" />
+          </a>
+          <a class="social" href="https://tiktok.com/@langxapp" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/tiktok.svg" alt="TikTok" />
+          </a>
+          <a class="social" href="https://www.facebook.com/langxapp" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/facebook.svg" alt="Facebook" />
+          </a>
+          <a class="social" href="https://www.youtube.com/@langxapp" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/youtube.svg" alt="YouTube" />
+          </a>
+          <a class="social" href="https://bsky.app/profile/langx.io" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/bluesky.svg" alt="Bluesky" />
+          </a>
+          <a class="social" href="https://github.com/langx" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/github.svg" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/hero.js" defer></script>
+    <script src="/js/leaderboard-token.js" defer></script>
+    <script defer src="/js/posthog.js"></script>
+    <script defer src="/js/analytics.js"></script>
+  </body>
+</html>

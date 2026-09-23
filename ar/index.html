@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LangX Token — نقاط داخل التطبيق لتبادل اللغات</title>
+    <meta
+      name="description"
+      content="LangX Token هو النقطة التي تكسبها داخل التطبيق حين تتدرّب على اللغات وتعلّمها على LangX. وهو ليس عملة مشفّرة: لا سعر ولا تداول ولا محفظة."
+    />
+    <link rel="canonical" href="https://token.langx.io/ar/" />
+    <link rel="alternate" hreflang="en" href="https://token.langx.io/" />
+    <link rel="alternate" hreflang="tr" href="https://token.langx.io/tr/" />
+    <link rel="alternate" hreflang="de" href="https://token.langx.io/de/" />
+    <link rel="alternate" hreflang="es" href="https://token.langx.io/es/" />
+    <link rel="alternate" hreflang="fr" href="https://token.langx.io/fr/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://token.langx.io/pt-br/" />
+    <link rel="alternate" hreflang="ru" href="https://token.langx.io/ru/" />
+    <link rel="alternate" hreflang="ar" href="https://token.langx.io/ar/" />
+    <link rel="alternate" hreflang="x-default" href="https://token.langx.io/" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Sans+Arabic:wght@400;700&family=Lalezar&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LangX" />
+    <meta property="og:locale" content="ar_AR" />
+    <meta property="og:url" content="https://token.langx.io/ar/" />
+    <meta
+      property="og:title"
+      content="LangX Token — اكسب النقاط بالتدرّب والتعليم"
+    />
+    <meta
+      property="og:description"
+      content="LangX Token هو النقطة التي تكسبها داخل التطبيق حين تتدرّب على اللغات وتعلّمها على LangX. وهو ليس عملة مشفّرة: لا سعر ولا تداول ولا محفظة."
+    />
+    <meta property="og:image" content="https://token.langx.io/images/site-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="LangX Token — تدرّب لتُحرز النقاط. نقاط داخل التطبيق، بلا محفظة ولا تداول ولا قيمة نقدية."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@langx_io" />
+    <meta
+      name="twitter:title"
+      content="LangX Token — اكسب النقاط بالتدرّب والتعليم"
+    />
+    <meta
+      name="twitter:description"
+      content="LangX Token هو النقطة التي تكسبها داخل التطبيق حين تتدرّب على اللغات وتعلّمها على LangX. وهو ليس عملة مشفّرة: لا سعر ولا تداول ولا محفظة."
+    />
+    <meta name="twitter:image" content="https://token.langx.io/images/site-preview.png" />
+    <meta name="theme-color" content="#130900" />
+
+    <!--
+      The hero heading animates in. It is hidden only while GSAP is on its way,
+      only for visitors who have not asked for reduced motion, and never for
+      longer than a second and a half — so a slow or missing script costs the
+      animation, not the headline. GSAP is deferred rather than render-blocking.
+    -->
+    <script>
+      (function (root) {
+        if (!window.matchMedia || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        root.classList.add("intro");
+        setTimeout(function () { root.classList.remove("intro"); }, 1500);
+      })(document.documentElement);
+    </script>
+    <script defer src="/js/gsap.min.js"></script>
+    <script defer src="/js/SplitText.min.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://langx.io/#organization",
+            "name": "LangX",
+            "url": "https://langx.io/",
+            "logo": "https://token.langx.io/images/apple-touch-icon.png",
+            "email": "hi@langx.io",
+            "sameAs": [
+              "https://github.com/langx",
+              "https://x.com/langx_io",
+              "https://www.facebook.com/langxapp",
+              "https://www.youtube.com/@langxapp",
+              "https://tiktok.com/@langxapp",
+              "https://bsky.app/profile/langx.io",
+              "https://t.me/languageXapp",
+              "https://discord.langx.io"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://token.langx.io/#website",
+            "url": "https://token.langx.io/",
+            "name": "LangX Token",
+            "publisher": { "@id": "https://langx.io/#organization" },
+            "inLanguage": ["en", "tr", "de", "es", "fr", "pt-BR", "ru", "ar"]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://token.langx.io/ar/#webpage",
+            "url": "https://token.langx.io/ar/",
+            "name": "LangX Token — نقاط داخل التطبيق لتبادل اللغات",
+            "isPartOf": { "@id": "https://token.langx.io/#website" },
+            "about": { "@id": "https://langx.io/#organization" },
+            "inLanguage": "ar",
+            "primaryImageOfPage": "https://token.langx.io/images/site-preview.png"
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://token.langx.io/ar/#faq",
+            "inLanguage": "ar",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "هل LangX Token عملة مشفّرة؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "لا. ليس على أي بلوكشين، ولا عقد له ولا عنوان محفظة، وليس مدرجًا في أي منصة تداول. إنه رقم في حسابك على LangX، يُكتسب في التطبيق ويُنفق في التطبيق."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "هل لـLangX Token سعر؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "لا. لا سعر له ولا قيمة نقدية، لأنه لا يوجد مكان لشرائه أو بيعه. أي عملة باسم مشابه على موقع لتتبّع الأسعار ليست LangX Token."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "هل يمكنني شراء الرموز أو بيعها أو سحبها؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "لا. لا يمكن شراء الرموز بالمال ولا بأي شيء آخر، ولا إرسالها إلى عضو آخر، ولا إخراجها من التطبيق. ولا يمكنها أن تفتح Fluent أو Polyglot أيضًا — فهذان اشتراكان."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "كم رمزًا يمكنني أن أكسب في اليوم؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "تدفع الرسائل حتى 200 في اليوم، وEcho حتى 25، ونصيبك من التجمّع اليومي حتى 250. أما التصحيحات وإجابات النطق والمحادثات الجديدة فبلا سقف يومي. اليوم النشط جدًا يصل إلى نحو 700 رمز."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "ماذا حدث لرموزي من تطبيق LangX القديم؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "انتقلت معك مقسومة على 100، وتحصل فوقها على مكافأة عودة قدرها 250. سجّل الدخول بعنوان البريد الإلكتروني نفسه الذي استخدمته من قبل."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "هل يُنزل إنفاق الرموز ترتيبي في لوحة الصدارة؟",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "لا. لوحات الصدارة ترتّب الرموز المكتسبة، لا الرموز التي تحتفظ بها. الإنفاق يُنقص رصيدك، ولا يُنقص مجموعك الكلي أبدًا."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body ontouchstart="">
+    <header id="header">
+      <a class="wordmark" href="https://langx.io" target="_blank" rel="noopener">LangX</a>
+      <nav class="nav" aria-label="الأقسام">
+        <a href="#learn-to-earn">النقاط</a>
+        <a href="#using-langx-tokens">الإنفاق</a>
+        <a href="#questions">أسئلة</a>
+        <a class="nav-cta" href="https://docs.langx.io/litepaper/token/token" target="_blank" rel="noopener">
+          القواعد كاملة
+        </a>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <p class="kicker">
+        نقاط داخل التطبيق &middot; بلا محفظة &middot; بلا تداول &middot; بلا قيمة
+        نقدية
+      </p>
+      <h1>تدرّب<br />لتُحرز النقاط</h1>
+      <p class="lede">
+        LangX Token هو النقطة التي تكسبها حين تتحدث مع الناس بلغة تتعلّمها
+        &mdash; وحين تساعدهم في المقابل. كل رسالة تُحتسب. وكل تصحيح يُحتسب
+        <span data-rule="derived.correctionPerMessage">10</span> أضعاف.
+      </p>
+      <p class="footnote">
+        ليس عملة مشفّرة. يبقى داخل تطبيق
+        <a href="https://langx.io" target="_blank" rel="noopener noreferrer">LangX</a>
+        لتبادل اللغات، وهذا هو التصميم كله.
+      </p>
+
+      <section aria-labelledby="app-link-buttons">
+        <h2 id="app-link-buttons" class="sr-only">ابدأ بكسب الرموز الآن</h2>
+        <div class="app-link-buttons">
+          <a
+            href="https://apps.apple.com/app/languagexchange/id6474187141"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="حمّل التطبيق من App Store"
+          >
+            <img src="/images/ios.png" alt="حمّله من App Store" width="176" height="52" decoding="async" />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=tech.newchapter.languageXchange"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="حمّل التطبيق من Google Play"
+          >
+            <img src="/images/android.png" alt="احصل عليه من Google Play" width="176" height="52" decoding="async" />
+          </a>
+          <a
+            href="https://app.langx.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="افتح تطبيق الويب"
+          >
+            <img src="/images/pwa.png" alt="افتح تطبيق LangX على الويب" width="176" height="52" decoding="async" />
+          </a>
+        </div>
+      </section>
+    </section>
+
+    <section aria-labelledby="token-leaderboard" class="token-leaderboard wrap">
+      <div class="board">
+        <header class="board-bar">
+          <h2 id="token-leaderboard">أعلى النقاط</h2>
+          <span class="board-period">على الإطلاق</span>
+        </header>
+        <div aria-expanded="false" class="table-container">
+          <div aria-expanded="false" class="token-leaderboard-table">
+            <div class="always-show"></div>
+            <div aria-hidden="true" class="can-hide tbody"></div>
+          </div>
+        </div>
+        <div class="table-show" role="button" tabindex="0" data-more="عرض المزيد ↓" data-less="عرض أقل ↑">
+          <p>عرض المزيد ↓</p>
+        </div>
+      </div>
+      <p class="note">
+        الأعضاء العشرة الذين كسبوا أكبر عدد من الرموز، مباشرةً من التطبيق.
+        لوحات الأسبوع والشهر والسنة وعلى الإطلاق موجودة في التطبيق، حيث ترى
+        أيضًا مكانك فيها.
+      </p>
+    </section>
+
+    <main class="wrap">
+      <section class="block" aria-labelledby="what-langx-token-is">
+        <p class="kicker">01 &mdash; ما هو</p>
+        <div class="split">
+          <h2 id="what-langx-token-is">نقطة داخل<br />التطبيق</h2>
+          <div class="prose">
+            <p>
+              <strong>
+                تكسبه باستخدام التطبيق، وتنفقه داخل التطبيق.
+              </strong>
+              هذا هو التعريف كله &mdash; لا شيء وراءه، ولا شيء أكثر منه.
+            </p>
+            <p>
+              إنه طريقتنا في شكرك على وجودك هنا، وفي منحك سببًا لتعود غدًا. كل
+              رسالة ترسلها وكل جملة تصحّحها هي ما يُبقي هذا المكان حيًّا. والرمز
+              هو حصيلة ذلك. يبدأ الجميع بـ<span data-rule="signupBonus">250</span>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="learn-to-earn">
+        <p class="kicker">02 &mdash; النقاط</p>
+        <h2 id="learn-to-earn">كيف تُحتسب النقاط</h2>
+        <div class="cols">
+          <div class="panel">
+            <h3>قيم النقاط</h3>
+            <dl class="values">
+              <div><dt>أرسل رسالة</dt><dd>+<span data-rule="award.message">1</span></dd></div>
+              <div><dt>صحّح جملة</dt><dd>+<span data-rule="award.correction">10</span></dd></div>
+              <div><dt>أجب عن طلب نطق</dt><dd>+<span data-rule="award.pronunciation">10</span></dd></div>
+              <div><dt>أول مرة يتحدث فيها كلاكما</dt><dd>+<span data-rule="award.mutualConversation">15</span></dd></div>
+              <div><dt>أنهِ مراجعة في Echo</dt><dd>+<span data-rule="award.echoSession">5</span></dd></div>
+            </dl>
+            <p class="note">
+              تُدفع حتى <span data-rule="caps.messagesPerDay">200</span> رسالة
+              في اليوم، وحتى
+              <span data-rule="caps.messagesPerPartnerPerDay">60</span> منها من
+              شريك واحد &mdash; فبلوغ السقف يحتاج أربعة أشخاص. ويدفع Echo عن
+              <span data-rule="caps.echoSessionsPerDay">5</span> مراجعات في
+              اليوم. أما التصحيحات فبلا سقف &mdash; التعليم يزن أكثر من الحديث،
+              وهذا مقصود.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>مكافأة السلسلة</h3>
+            <div class="chart" role="img" aria-label="مكافآت السلسلة: 7 أيام 50، 30 يومًا 250، 100 يوم 1,000، 180 يومًا 1,500، 365 يومًا 5,000، 730 يومًا 12,000، 1,095 يومًا 25,000 رمز.">
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.7">50</span>
+                <div class="bar-fill" style="height: 16px"></div>
+                <span class="bar-label">7</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.30">250</span>
+                <div class="bar-fill" style="height: 37px"></div>
+                <span class="bar-label">30</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.100">1K</span>
+                <div class="bar-fill" style="height: 55px"></div>
+                <span class="bar-label">100</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.180">1.5K</span>
+                <div class="bar-fill" style="height: 60px"></div>
+                <span class="bar-label">180</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.365">5K</span>
+                <div class="bar-fill" style="height: 76px"></div>
+                <span class="bar-label">365</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.730">12K</span>
+                <div class="bar-fill" style="height: 87px"></div>
+                <span class="bar-label">730</span>
+              </div>
+              <div class="bar">
+                <span class="bar-value" data-rule="streakMilestones.1095">25K</span>
+                <div class="bar-fill is-top" style="height: 97px"></div>
+                <span class="bar-label">1095</span>
+              </div>
+            </div>
+            <p class="note">
+              أيام متتالية، والرموز التي تصلك يوم تبلغها سلسلتك &mdash; تُدفع عن
+              يوم تدرّبت فيه فعلًا، لا عن يوم فتحت فيه التطبيق فقط.
+            </p>
+          </div>
+        </div>
+
+        <div class="pool">
+          <div class="pool-figure">
+            <strong data-rule="pool.total">5,000</strong>
+            <span>رمز، كل يوم</span>
+          </div>
+          <div class="pool-body">
+            <h3>التجمّع اليومي</h3>
+            <p>
+              فوق ما تكسبه مباشرة، يُوزَّع تجمّع ثابت في نهاية كل يوم على كل من
+              كان نشطًا، بحسب مقدار نشاطه. يتوقف نصيبك على يوم الآخرين كما يتوقف
+              على يومك &mdash; ولا يمكن لأحد أن يأخذ أكثر من
+              <span data-rule="derived.poolMaxSharePercent">5</span>% منه، أي
+              <span data-rule="derived.poolMaxShare">250</span> رمزًا.
+            </p>
+            <p>
+              يصل عند <span data-rule="pool.payoutHourUtc">04</span>:00 UTC من
+              صباح اليوم التالي. الحسابات التي عمرها أقل من
+              <span data-rule="pool.accountAgeRampUpHours">24</span> ساعة لا
+              تشارك فيه.
+            </p>
+          </div>
+        </div>
+
+        <div class="cols cols-more">
+          <div class="panel">
+            <h3>ادعُ صديقًا</h3>
+            <dl class="values">
+              <div><dt>حين يكتب لأحدٍ أول مرة</dt><dd>+<span data-rule="referral.activation">1,000</span></dd></div>
+              <div><dt>إن اشترك يومًا في خطة مدفوعة</dt><dd>+<span data-rule="referral.subscription">4,000</span></dd></div>
+            </dl>
+            <p class="note">
+              حتى <span data-rule="referral.maxPerInvitee">5,000</span> عن كل
+              شخص تدعوه. ويكسب هو
+              <span data-rule="referral.inviteeActivation">750</span> في اللحظة
+              نفسها، فيبدأ بـ<span data-rule="referral.inviteeTotal">1,000</span>. لا يُدفع شيء
+              مقابل التسجيل وحده، ومن يدفع ثمن خطة لا يحصل على أي رمز مقابل
+              الدفع.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>هدية كل ساعة</h3>
+            <p>
+              هدية مجانية كل ساعة في متجر التطبيق. تحوي أي شيء من لا شيء حتى
+              <span data-rule="derived.giftMax">250</span> رمزًا &mdash; نحو
+              <span data-rule="derived.giftMean">11</span> في المتوسط، ونحو ثلثها
+              فارغ.
+            </p>
+            <p class="note">
+              رموز الهدايا تذهب إلى رصيدك ومجموعك الكلي، ولا تذهب أبدًا إلى لوحات
+              الأسبوع أو الشهر أو السنة. لا شيء يُشترى ولا شيء يُراهَن عليه: إنها
+              هدية، لا لعبة حظ.
+            </p>
+          </div>
+        </div>
+        <p class="note">
+          هذه هي القيم الحالية. الاقتصاد ما زال فتيًّا، وقد تتغيّر الأرقام بينما
+          نتعلّم كيف يتصرف مع نشاط حقيقي.
+        </p>
+      </section>
+
+      <section class="block" aria-labelledby="using-langx-tokens">
+        <p class="kicker">03 &mdash; الإنفاق</p>
+        <h2 id="using-langx-tokens">أربعة أشياء تنفق عليها</h2>
+        <p class="prose-lede">
+          هذه هي القائمة كاملة، وهي كاملة عن قصد.
+        </p>
+        <div class="cols cols-flow">
+          <div class="panel">
+            <div class="panel-head">
+              <h3>تجميد السلسلة</h3>
+              <span class="price" data-rule="sinks.streakFreeze">200</span>
+            </div>
+            <p>
+              ينقذ يومًا فاتك، فلا يمحو يومٌ سيئ أشهرًا من التدرّب. يمكنك أن
+              تحتفظ بـ<span data-rule="sinks.maxBankedStreakFreezes">2</span>
+              منه في رصيدك في الوقت نفسه &mdash; ما يكفي لتغطية الحياة الواقعية،
+              ولا يكفي ليجعل السلسلة بلا معنى.
+            </p>
+          </div>
+          <div class="panel">
+            <div class="panel-head">
+              <h3>استرجع يومًا فائتًا</h3>
+              <span class="price" data-rule="sinks.dayRepair">600</span>
+            </div>
+            <p>
+              يملأ مربعًا فارغًا واحدًا في خريطة نشاطك، ضمن آخر
+              <span data-rule="sinks.dayRepairMaxAgeDays">14</span> يومًا.
+              <span data-rule="sinks.dayRepairPerMonth">2</span> في الشهر، وليس
+              اليوم أبدًا &mdash; فاليوم يُكتسب. وهو أغلى من التجميد عن قصد:
+              التجميد يُشترى قبل اليوم، وهذا بعده.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>الإطارات والألقاب</h3>
+            <dl class="values">
+              <div>
+                <dt><span data-rule="derived.frameCount">9</span> إطارات</dt>
+                <dd><span data-rule="derived.frameMin">1,000</span> &mdash; <span data-rule="derived.frameMax">35,000</span></dd>
+              </div>
+              <div>
+                <dt><span data-rule="derived.titleCount">10</span> ألقاب</dt>
+                <dd><span data-rule="derived.titleMin">1,500</span> &mdash; <span data-rule="derived.titleMax">100,000</span></dd>
+              </div>
+            </dl>
+            <p>
+              من الإطار الأردوازي إلى إطار منتصف الليل، ومن «مبتدئ» إلى «أسطورة».
+              وإطار آخر، الشفق، لا يكفي الادّخار للحصول عليه: ثمنه
+              <span data-rule="cosmetic.frame.aurora.price">50,000</span> ويتطلب
+              سلسلة من
+              <span data-rule="cosmetic.frame.aurora.requires.longestStreak">365</span>
+              يومًا مع
+              <span data-rule="cosmetic.frame.aurora.requires.corrections">5,000</span>
+              تصحيح مكتوب.
+            </p>
+            <p class="note">
+              تغيّر مظهر ملفك الشخصي، ولا شيء غير ذلك.
+            </p>
+          </div>
+          <div class="panel">
+            <h3>حزم الملصقات</h3>
+            <dl class="values">
+              <div><dt>البداية</dt><dd data-rule="cosmetic.stickers.starter.price">1,000</dd></div>
+              <div><dt>التدريب</dt><dd data-rule="cosmetic.stickers.practice.price">1,000</dd></div>
+              <div><dt>بكسل</dt><dd data-rule="cosmetic.stickers.pixel.price">1,500</dd></div>
+            </dl>
+            <p>
+              <span data-rule="derived.stickerPackCount">3</span> حزم، في كل منها
+              <span data-rule="derived.stickersPerPack">12</span> ملصقًا ترسلها في
+              المحادثة: واحدة لما تقوله في المحادثة، وواحدة للتدرّب نفسه، وواحدة
+              بفن البكسل ذي 8 بت. حزمة بكسل أغلى لأننا رسمنا ملصقاتها الاثني عشر
+              كلها؛ ولا حزمة أعلى درجة من أخرى، فاشترِ أيًّا منها أولًا.
+            </p>
+            <p class="note">
+              لا كتابة على أيٍّ منها. التطبيق يُقرأ بثماني لغات.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="what-tokens-are-not">
+        <div class="negative">
+          <h2 id="what-tokens-are-not">ما ليس هو</h2>
+          <ul class="negative-list">
+            <li>لا يُشترى</li>
+            <li>لا يُتداول</li>
+            <li>لا يُسحب</li>
+            <li>لا يُحوَّل</li>
+            <li>ليس على أي بلوكشين</li>
+            <li>غير مدرج في أي مكان</li>
+          </ul>
+          <p>
+            <strong>ولا يمكنه أن يفتح Fluent أو Polyglot.</strong> وهذا مقصود:
+            لو استطاعت الرموز شراء ميزة مدفوعة، لصار جمع الرموز بديلًا عن
+            الاشتراك &mdash; والاشتراك هو ما يموّل التطبيق.
+          </p>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="returning-members">
+        <p class="kicker">04 &mdash; العودة</p>
+        <div class="split">
+          <div>
+            <h2 id="returning-members">عائد<br />إلينا؟</h2>
+            <div class="ratio">
+              <strong>÷ <span data-rule="legacyTokenDivisor">100</span></strong>
+              <span>الرصيد القديم، بمقياس جديد</span>
+            </div>
+          </div>
+          <div class="prose">
+            <p>
+              <strong>رصيدك ينتقل معك.</strong> لم يُشترَ شيء على LangX ولم يُبَع
+              قط &mdash; فما بدا سجلَّ مشتريات كان في الحقيقة حسابَ التوزيع
+              اليومي &mdash; لذا فكل رمز في رصيدك مكتسب، ولا سبب لعدم احترامه.
+            </p>
+            <p>
+              تُقسم الأرصدة على 100 عند نقلها، ونفضّل أن نقول ذلك صراحةً على أن
+              تكتشفه لاحقًا. تصل الأرصدة القديمة إلى 2.28 مليون، بينما يبلغ اليوم
+              النشط جدًا الآن نحو 700 رمز. لو احتُسبت واحدًا بواحد، لسبق أكبرُ
+              رصيد أيَّ عضو جديد بنحو تسع سنوات، ولما تحركت لوحة الصدارة على
+              الإطلاق مرة أخرى. أما بعد القسمة، فيبدأ متقدمًا بنحو شهر &mdash;
+              أفضلية حقيقية، لكن يمكن لغيره أن يلحق بها.
+            </p>
+            <p>
+              وتحصل أيضًا على مكافأة عودة قدرها
+              <span data-rule="welcomeBackBonus">250</span>، والسلسلة التي كانت
+              لديك مجمَّدة لا ضائعة: يمكنك إنفاق الرموز لإعادتها. سجّل الدخول
+              بعنوان البريد الإلكتروني نفسه الذي استخدمته من قبل &mdash;
+              <a href="https://docs.langx.io/litepaper/library/coming-back" target="_blank" rel="noopener">إليك الطريقة</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" aria-labelledby="questions">
+        <p class="kicker">05 &mdash; أسئلة</p>
+        <h2 id="questions">إجابات مباشرة</h2>
+        <div class="faq">
+          <div class="faq-item">
+            <h3 data-faq-q>هل LangX Token عملة مشفّرة؟</h3>
+            <div data-faq-a>
+              <p>لا. ليس على أي بلوكشين، ولا عقد له ولا عنوان محفظة، وليس مدرجًا في أي منصة تداول. إنه رقم في حسابك على LangX، يُكتسب في التطبيق ويُنفق في التطبيق.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>هل لـLangX Token سعر؟</h3>
+            <div data-faq-a>
+              <p>لا. لا سعر له ولا قيمة نقدية، لأنه لا يوجد مكان لشرائه أو بيعه. أي عملة باسم مشابه على موقع لتتبّع الأسعار ليست LangX Token.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>هل يمكنني شراء الرموز أو بيعها أو سحبها؟</h3>
+            <div data-faq-a>
+              <p>لا. لا يمكن شراء الرموز بالمال ولا بأي شيء آخر، ولا إرسالها إلى عضو آخر، ولا إخراجها من التطبيق. ولا يمكنها أن تفتح Fluent أو Polyglot أيضًا — فهذان اشتراكان.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>كم رمزًا يمكنني أن أكسب في اليوم؟</h3>
+            <div data-faq-a>
+              <p>تدفع الرسائل حتى <span data-rule="caps.messagesPerDay">200</span> في اليوم، وEcho حتى <span data-rule="derived.echoDailyMax">25</span>، ونصيبك من التجمّع اليومي حتى <span data-rule="derived.poolMaxShare">250</span>. أما التصحيحات وإجابات النطق والمحادثات الجديدة فبلا سقف يومي. اليوم النشط جدًا يصل إلى نحو 700 رمز.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>ماذا حدث لرموزي من تطبيق LangX القديم؟</h3>
+            <div data-faq-a>
+              <p>انتقلت معك مقسومة على <span data-rule="legacyTokenDivisor">100</span>، وتحصل فوقها على مكافأة عودة قدرها <span data-rule="welcomeBackBonus">250</span>. سجّل الدخول بعنوان البريد الإلكتروني نفسه الذي استخدمته من قبل.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <h3 data-faq-q>هل يُنزل إنفاق الرموز ترتيبي في لوحة الصدارة؟</h3>
+            <div data-faq-a>
+              <p>لا. لوحات الصدارة ترتّب الرموز المكتسبة، لا الرموز التي تحتفظ بها. الإنفاق يُنقص رصيدك، ولا يُنقص مجموعك الكلي أبدًا.</p>
+            </div>
+          </div>
+        </div>
+        <p class="note">
+          كل قاعدة وسقف ومعادلة، مع أمثلة محسوبة، موجودة في
+          <a href="https://docs.langx.io/litepaper/token/token" target="_blank" rel="noopener">وثائق LangX</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content wrap">
+        <div class="copy">
+          <p class="copyright">© 2026 LangX — تدرّب، تعلّم، انجح</p>
+          <p class="disclaimer">
+            رموز LangX Token نقاط داخل التطبيق. لا قيمة نقدية لها، ولا يمكن
+            شراؤها أو بيعها أو تداولها أو سحبها.
+          </p>
+          <p class="disclaimer">
+            <a href="/privacy">الخصوصية</a> ·
+            <a
+              href="https://langx.io/privacy-policy"
+              target="_blank"
+              rel="noopener noreferrer"
+              >سياسة خصوصية التطبيق</a
+            >
+          </p>
+          <nav class="languages" aria-label="اللغة">
+            <a href="/" hreflang="en" lang="en">English</a>
+            <a href="/tr/" hreflang="tr" lang="tr">Türkçe</a>
+            <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+            <a href="/es/" hreflang="es" lang="es">Español</a>
+            <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+            <a href="/pt-br/" hreflang="pt-BR" lang="pt-BR">Português</a>
+            <a href="/ru/" hreflang="ru" lang="ru">Русский</a>
+            <a href="/ar/" hreflang="ar" lang="ar" dir="rtl" aria-current="page">العربية</a>
+          </nav>
+        </div>
+        <div class="buttons">
+          <a class="social" href="https://discord.langx.io" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/discord.svg" alt="Discord" />
+          </a>
+          <a class="social" href="https://t.me/languageXapp" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/telegram.svg" alt="Telegram" />
+          </a>
+          <a class="social" href="https://x.com/langx_io" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/x.svg" alt="X" />
+          </a>
+          <a class="social" href="https://tiktok.com/@langxapp" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/tiktok.svg" alt="TikTok" />
+          </a>
+          <a class="social" href="https://www.facebook.com/langxapp" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/facebook.svg" alt="Facebook" />
+          </a>
+          <a class="social" href="https://www.youtube.com/@langxapp" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/youtube.svg" alt="YouTube" />
+          </a>
+          <a class="social" href="https://bsky.app/profile/langx.io" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/bluesky.svg" alt="Bluesky" />
+          </a>
+          <a class="social" href="https://github.com/langx" target="_blank" rel="noopener">
+            <img width="24" height="24" src="/images/socials/github.svg" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/hero.js" defer></script>
+    <script src="/js/leaderboard-token.js" defer></script>
+    <script defer src="/js/posthog.js"></script>
+    <script defer src="/js/analytics.js"></script>
+  </body>
+</html>
