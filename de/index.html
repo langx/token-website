@@ -153,7 +153,7 @@
                 "name": "Wie viele Token kann ich an einem Tag verdienen?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Nachrichten bringen bis zu 200 am Tag, Echo bis zu 25 und ein Anteil am täglichen Pool bis zu 250. Korrekturen, Antworten auf Ausspracheanfragen und neue Gespräche haben keine Tagesobergrenze. Ein sehr aktiver Tag kommt auf etwa 700 Token."
+                  "text": "Nachrichten bringen bis zu 200 am Tag, Echo bis zu 25 und ein Anteil am täglichen Pool bis zu 250. Korrekturen, Antworten auf Ausspracheanfragen und neue Gespräche haben keine Tagesobergrenze; nur für die Sätze einer einzelnen Person bringen höchstens 10 Korrekturen am Tag etwas. Ein sehr aktiver Tag kommt auf etwa 700 Token."
                 }
               },
               {
@@ -307,8 +307,12 @@
               <span data-rule="caps.messagesPerPartnerPerDay">60</span> von einem
               einzelnen Partner &mdash; man braucht vier Leute, um die Obergrenze
               zu erreichen. Echo zahlt für <span data-rule="caps.echoSessionsPerDay">5</span>
-              Einheiten am Tag. Korrekturen haben keine Obergrenze &mdash;
-              Unterrichten zählt mit Absicht mehr als Reden.
+              Einheiten am Tag. Korrekturen haben keine Tagesobergrenze, nur
+              eine pro Person: Für die Sätze eines einzelnen Partners bringen
+              bis zu
+              <span data-rule="caps.correctionsPerPartnerPerDay">10</span>
+              Korrekturen am Tag Punkte. Unterrichten zählt mit Absicht mehr
+              als Reden.
             </p>
           </div>
           <div class="panel">
@@ -610,7 +614,7 @@
           <div class="faq-item">
             <h3 data-faq-q>Wie viele Token kann ich an einem Tag verdienen?</h3>
             <div data-faq-a>
-              <p>Nachrichten bringen bis zu <span data-rule="caps.messagesPerDay">200</span> am Tag, Echo bis zu <span data-rule="derived.echoDailyMax">25</span> und ein Anteil am täglichen Pool bis zu <span data-rule="derived.poolMaxShare">250</span>. Korrekturen, Antworten auf Ausspracheanfragen und neue Gespräche haben keine Tagesobergrenze. Ein sehr aktiver Tag kommt auf etwa 700 Token.</p>
+              <p>Nachrichten bringen bis zu <span data-rule="caps.messagesPerDay">200</span> am Tag, Echo bis zu <span data-rule="derived.echoDailyMax">25</span> und ein Anteil am täglichen Pool bis zu <span data-rule="derived.poolMaxShare">250</span>. Korrekturen, Antworten auf Ausspracheanfragen und neue Gespräche haben keine Tagesobergrenze; nur für die Sätze einer einzelnen Person bringen höchstens <span data-rule="caps.correctionsPerPartnerPerDay">10</span> Korrekturen am Tag etwas. Ein sehr aktiver Tag kommt auf etwa 700 Token.</p>
             </div>
           </div>
           <div class="faq-item">

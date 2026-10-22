@@ -153,7 +153,7 @@
                 "name": "Bir günde kaç jeton kazanabilirim?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Mesajlar günde en fazla 200, Echo en fazla 25, günlük havuzdaki payın da en fazla 250 jeton getirir. Düzeltmelerin, telaffuz yanıtlarının ve yeni sohbetlerin günlük tavanı yok. Çok aktif bir gün yaklaşık 700 jeton eder."
+                  "text": "Mesajlar günde en fazla 200, Echo en fazla 25, günlük havuzdaki payın da en fazla 250 jeton getirir. Düzeltmelerin, telaffuz yanıtlarının ve yeni sohbetlerin günlük tavanı yok; yalnızca aynı kişinin cümlelerine yapılan düzeltmelerden günde en fazla 10 tanesi jeton getirir. Çok aktif bir gün yaklaşık 700 jeton eder."
                 }
               },
               {
@@ -306,8 +306,11 @@
               <span data-rule="caps.messagesPerPartnerPerDay">60</span> &mdash;
               tavana ulaşmak için dört kişiyle konuşmak gerekir. Echo’da günde
               <span data-rule="caps.echoSessionsPerDay">5</span> oturum puan
-              getirir. Düzeltmelerin tavanı yok &mdash; öğretmek, konuşmaktan
-              bilerek daha ağır basar.
+              getirir. Düzeltmelerin günlük tavanı yok, yalnızca kişi başına
+              bir sınırı var: tek bir partnerin cümleleri için günde en fazla
+              <span data-rule="caps.correctionsPerPartnerPerDay">10</span>
+              düzeltme puan getirir. Öğretmek, konuşmaktan bilerek daha ağır
+              basar.
             </p>
           </div>
           <div class="panel">
@@ -607,7 +610,7 @@
           <div class="faq-item">
             <h3 data-faq-q>Bir günde kaç jeton kazanabilirim?</h3>
             <div data-faq-a>
-              <p>Mesajlar günde en fazla <span data-rule="caps.messagesPerDay">200</span>, Echo en fazla <span data-rule="derived.echoDailyMax">25</span>, günlük havuzdaki payın da en fazla <span data-rule="derived.poolMaxShare">250</span> jeton getirir. Düzeltmelerin, telaffuz yanıtlarının ve yeni sohbetlerin günlük tavanı yok. Çok aktif bir gün yaklaşık 700 jeton eder.</p>
+              <p>Mesajlar günde en fazla <span data-rule="caps.messagesPerDay">200</span>, Echo en fazla <span data-rule="derived.echoDailyMax">25</span>, günlük havuzdaki payın da en fazla <span data-rule="derived.poolMaxShare">250</span> jeton getirir. Düzeltmelerin, telaffuz yanıtlarının ve yeni sohbetlerin günlük tavanı yok; yalnızca aynı kişinin cümlelerine yapılan düzeltmelerden günde en fazla <span data-rule="caps.correctionsPerPartnerPerDay">10</span> tanesi jeton getirir. Çok aktif bir gün yaklaşık 700 jeton eder.</p>
             </div>
           </div>
           <div class="faq-item">

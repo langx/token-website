@@ -153,7 +153,7 @@
                 "name": "How many tokens can I earn in a day?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Messages pay up to 200 a day, Echo up to 25, and a share of the daily pool up to 250. Corrections, pronunciation answers and new conversations have no daily cap. A very active day comes to about 700 tokens."
+                  "text": "Messages pay up to 200 a day, Echo up to 25, and a share of the daily pool up to 250. Corrections, pronunciation answers and new conversations have no daily cap, except that only 10 corrections a day of any one person’s sentences pay. A very active day comes to about 700 tokens."
                 }
               },
               {
@@ -307,8 +307,12 @@
               <span data-rule="caps.messagesPerPartnerPerDay">60</span> from any
               single partner &mdash; it takes four people to reach the ceiling.
               Echo pays for <span data-rule="caps.echoSessionsPerDay">5</span>
-              reviews a day. Corrections have no cap &mdash; teaching is
-              weighted higher than talking, on purpose.
+              reviews a day. Corrections have no daily cap, only a per-person
+              one: up to
+              <span data-rule="caps.correctionsPerPartnerPerDay">10</span>
+              corrections a day pay for any one partner’s sentences. Teaching
+              is weighted
+              higher than talking, on purpose.
             </p>
           </div>
           <div class="panel">
@@ -602,7 +606,7 @@
           <div class="faq-item">
             <h3 data-faq-q>How many tokens can I earn in a day?</h3>
             <div data-faq-a>
-              <p>Messages pay up to <span data-rule="caps.messagesPerDay">200</span> a day, Echo up to <span data-rule="derived.echoDailyMax">25</span>, and a share of the daily pool up to <span data-rule="derived.poolMaxShare">250</span>. Corrections, pronunciation answers and new conversations have no daily cap. A very active day comes to about 700 tokens.</p>
+              <p>Messages pay up to <span data-rule="caps.messagesPerDay">200</span> a day, Echo up to <span data-rule="derived.echoDailyMax">25</span>, and a share of the daily pool up to <span data-rule="derived.poolMaxShare">250</span>. Corrections, pronunciation answers and new conversations have no daily cap, except that only <span data-rule="caps.correctionsPerPartnerPerDay">10</span> corrections a day of any one person’s sentences pay. A very active day comes to about 700 tokens.</p>
             </div>
           </div>
           <div class="faq-item">
