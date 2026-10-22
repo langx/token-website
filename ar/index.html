@@ -153,7 +153,7 @@
                 "name": "كم رمزًا يمكنني أن أكسب في اليوم؟",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "تدفع الرسائل حتى 200 في اليوم، وEcho حتى 25، ونصيبك من التجمّع اليومي حتى 250. أما التصحيحات وإجابات النطق والمحادثات الجديدة فبلا سقف يومي. اليوم النشط جدًا يصل إلى نحو 700 رمز."
+                  "text": "تدفع الرسائل حتى 200 في اليوم، وEcho حتى 25، ونصيبك من التجمّع اليومي حتى 250. أما التصحيحات وإجابات النطق والمحادثات الجديدة فبلا سقف يومي، إلا أن تصحيحات جُمل الشخص الواحد يُدفع منها 10 في اليوم على الأكثر. اليوم النشط جدًا يصل إلى نحو 700 رمز."
                 }
               },
               {
@@ -303,8 +303,10 @@
               <span data-rule="caps.messagesPerPartnerPerDay">60</span> منها من
               شريك واحد &mdash; فبلوغ السقف يحتاج أربعة أشخاص. ويدفع Echo عن
               <span data-rule="caps.echoSessionsPerDay">5</span> مراجعات في
-              اليوم. أما التصحيحات فبلا سقف &mdash; التعليم يزن أكثر من الحديث،
-              وهذا مقصود.
+              اليوم. أما التصحيحات فبلا سقف يومي، بل بسقف لكل شخص: يُدفع مقابل
+              <span data-rule="caps.correctionsPerPartnerPerDay">10</span>
+              تصحيحات في اليوم على الأكثر لجُمل الشريك الواحد. التعليم يزن
+              أكثر من الحديث، وهذا مقصود.
             </p>
           </div>
           <div class="panel">
@@ -586,7 +588,7 @@
           <div class="faq-item">
             <h3 data-faq-q>كم رمزًا يمكنني أن أكسب في اليوم؟</h3>
             <div data-faq-a>
-              <p>تدفع الرسائل حتى <span data-rule="caps.messagesPerDay">200</span> في اليوم، وEcho حتى <span data-rule="derived.echoDailyMax">25</span>، ونصيبك من التجمّع اليومي حتى <span data-rule="derived.poolMaxShare">250</span>. أما التصحيحات وإجابات النطق والمحادثات الجديدة فبلا سقف يومي. اليوم النشط جدًا يصل إلى نحو 700 رمز.</p>
+              <p>تدفع الرسائل حتى <span data-rule="caps.messagesPerDay">200</span> في اليوم، وEcho حتى <span data-rule="derived.echoDailyMax">25</span>، ونصيبك من التجمّع اليومي حتى <span data-rule="derived.poolMaxShare">250</span>. أما التصحيحات وإجابات النطق والمحادثات الجديدة فبلا سقف يومي، إلا أن تصحيحات جُمل الشخص الواحد يُدفع منها <span data-rule="caps.correctionsPerPartnerPerDay">10</span> في اليوم على الأكثر. اليوم النشط جدًا يصل إلى نحو 700 رمز.</p>
             </div>
           </div>
           <div class="faq-item">
