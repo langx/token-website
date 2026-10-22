@@ -611,6 +611,13 @@ strong {
   font-size: 14px;
 }
 
+/* Reads as the "Not transferable" item's footnote, so it sits under the list
+   rather than behind the dashed rule that opens the paragraph after it. */
+.negative p.negative-gift {
+  border-top: 0;
+  padding-top: 0;
+}
+
 /* Returning members */
 .ratio {
   margin-top: 18px;
