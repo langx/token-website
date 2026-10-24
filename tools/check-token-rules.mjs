@@ -121,12 +121,14 @@ function expected(rules, cosmetics) {
     d(`${kind}Min`, Math.min(...open.map((c) => c.price)));
     d(`${kind}Max`, Math.max(...open.map((c) => c.price)));
   }
-  const packs = cosmetics.filter((c) => c.kind === "stickers");
+  // A pack priced 0 is one every account owns from the start, not something
+  // the store sells, so it is no part of what the page prices or counts.
+  const packs = cosmetics.filter((c) => c.kind === "stickers" && c.price > 0);
   d("stickerPackCount", packs.length);
   const sizes = new Set(packs.map((p) => p.stickers.length));
   d("stickersPerPack", sizes.size === 1 ? [...sizes][0] : NaN);
   for (const c of cosmetics) {
-    if (c.kind === "stickers" || c.requires) flatten({ price: c.price, requires: c.requires ?? {} }, `cosmetic.${c.id}`, v);
+    if ((c.kind === "stickers" && c.price > 0) || c.requires) flatten({ price: c.price, requires: c.requires ?? {} }, `cosmetic.${c.id}`, v);
   }
   return v;
 }
