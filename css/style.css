@@ -151,6 +151,23 @@ strong {
   text-transform: uppercase;
 }
 
+/* The sister sites. They open in a new tab and carry the arrow, so nobody
+   mistakes them for a section of this page; langx.io links back the same way. */
+.nav-site {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-site svg {
+  flex: none;
+}
+
+.nav > a:not(.nav-site) + .nav-site {
+  padding-inline-start: 24px;
+  border-inline-start: 2px solid rgba(255, 196, 9, 0.35);
+}
+
 .nav-cta {
   border: 2px solid var(--yellow);
   padding: 8px 15px;
@@ -792,9 +809,14 @@ footer {
   }
 
   .nav {
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 10px 16px;
     font-size: 11px;
     letter-spacing: 1px;
+  }
+
+  .nav > a:not(.nav-site) + .nav-site {
+    padding-inline-start: 16px;
   }
 
   #hero {
